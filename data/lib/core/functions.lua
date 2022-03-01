@@ -20,7 +20,8 @@ function getFormattedWorldTime()
 end
 
 function getLootRandom()
-	return math.random(0, MAX_LOOTCHANCE) * 100 / math.max(1, (configManager.getNumber(configKeys.RATE_LOOT) * SCHEDULE_LOOT_RATE))
+	local multi = (configManager.getNumber(configKeys.RATE_LOOT) * SCHEDULE_LOOT_RATE)
+	return math.random(0, MAX_LOOTCHANCE) * 100 / math.max(1, multi)
 end
 
 local start = os.time()
