@@ -4150,6 +4150,14 @@ GameStore.Categories = {
           description = "<i>Turns your female character into a male one - or vice versa.</i>\n\n{character}\n{activated}\n{info} you will keep all outfits you have purchased or earned in quest",
           type = GameStore.OfferTypes.OFFER_TYPE_SEXCHANGE,
         },
+        {
+          icons = { "Tibiacity_Encyclopedia.png" },
+          name = "Tibiacity Encyclopedia",
+          price = 50,
+          id = 8149,
+          description = "<i>All the knowledge behind the world of Curseria, quests and paths to unimaginable locations, all in one diary, from someone whose name is blurred.",
+          type = GameStore.OfferTypes.OFFER_TYPE_NONE,
+        },
       },
   },
 -- Usefull Things  
