@@ -3,9 +3,9 @@
 -- Leave empty if you wish to disable.
 
 announcementChannels = {
-	["serverAnnouncements"] = "", -- Used for an announcement channel on your discord
-	["raids"] = "", -- Used to isolate raids on your discord
-	["player-kills"] = "", -- Self-explaining
+	["serverAnnouncements"] = "https://discord.com/api/webhooks/966771867761385582/SyA0yQKORxz6Z4ON9bWIQg913Bc1w5c62iy4CD3JdM2TiCwu7pEN8x71Z0lLrj8pNbT5", -- Used for an announcement channel on your discord
+	["raids"] = "https://discord.com/api/webhooks/966771867761385582/SyA0yQKORxz6Z4ON9bWIQg913Bc1w5c62iy4CD3JdM2TiCwu7pEN8x71Z0lLrj8pNbT5", -- Used to isolate raids on your discord
+	["player-kills"] = "https://discord.com/api/webhooks/966776909876834365/sYEFelBHRaZSfTK3ccBwrrY2pOichEOlnn7ANaNP6My-tw7fhggs_sE1cY8yJHM2j2Kh", -- Self-explaining
 }
 
 --[[

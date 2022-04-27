@@ -45,6 +45,10 @@ function playerLogin.onLogin(player)
 	else
 		player:sendTextMessage(MESSAGE_STATUS, "Welcome to " .. SERVER_NAME .. "!")
 		player:sendTextMessage(MESSAGE_LOGIN, string.format("Your last visit in ".. SERVER_NAME ..": %s.", os.date("%d. %b %Y %X", player:getLastLoginSaved())))
+		player:sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "Nao se esqueca de me seguir na Twitch e Discord para ganhar TC:")
+		player:sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "Dont forget to follow me on Twitch & Discord and earn TC for free:")
+		player:sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "https://www.twitch.tv/curseofcourse")
+		player:sendTextMessage(MESSAGE_PARTY_MANAGEMENT, "https://discord.gg/y6C3BUrh4u")
 	end
 
 	if isPremium(player) then
