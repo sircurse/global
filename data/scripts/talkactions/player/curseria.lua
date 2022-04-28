@@ -7,7 +7,10 @@ function twitchTV.onSay(player, words, param)
 	.. "\nhttps://discord.gg/y6C3BUrh4u"
 	.. "\n "
 	.. "\nTwitch:"
-	.. "\nhttps://www.twitch.tv/curseofcourse")
+	.. "\nhttps://www.twitch.tv/curseofcourse"
+	.. "\n "
+	.. "\nTwitch Store:"
+	.. "\nhttps://streamelements.com/curseofcourse/store")
 	return false
 end
 
