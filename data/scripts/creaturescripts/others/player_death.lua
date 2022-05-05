@@ -49,7 +49,7 @@ function playerDeath.onDeath(player, corpse, killer, mostDamageKiller, unjustifi
 	local playerLevel = player:getLevel()
 	db.query('INSERT INTO `player_deaths` (`player_id`, `time`, `level`, `killed_by`, `is_player`, `mostdamage_by`, `mostdamage_is_player`, `unjustified`, `mostdamage_unjustified`) VALUES (' .. playerGuid .. ', ' .. os.time() .. ', ' .. player:getLevel() .. ', ' .. db.escapeString(killerName) .. ', ' .. byPlayer .. ', ' .. db.escapeString(mostDamageName) .. ', ' .. byPlayerMostDamage .. ', ' .. (unjustified and 1 or 0) .. ', ' .. (mostDamageUnjustified and 1 or 0) .. ')')
 	local resultId = db.storeQuery('SELECT `player_id` FROM `player_deaths` WHERE `player_id` = ' .. playerGuid)
-	Webhook.send(playerName.. " died at level " ..playerLevel().. " by " ..killerName, WEBHOOK_COLOR_WARNING, announcementChannels["player-kills"])
+	Webhook.send(playerName.. " has just died!", "Died at level " ..playerLevel.. " by " ..killerName, WEBHOOK_COLOR_WARNING, announcementChannels["player-kills"])
 
 	local deathRecords = 0
 	local tmpResultId = resultId
