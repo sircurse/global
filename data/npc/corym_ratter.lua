@@ -52,6 +52,18 @@ end
 
 npcHandler:addModule(FocusModule:new())
 
+local function greetCallback(npc, creature, message)
+	local player = Player(creature)
+	local playerId = player:getId()
+
+	if MsgContains(message, "hi") then
+		npcHandler:say("Welcome stranger! You might be surprised that I don't attack you immediately. The point is, that I think you could be useful to me. What you see in front of you is a great mine of the corym! ...",
+		"We dig up all what mother earth delivers to us, valuable natural resources. But the yield is getting worse and here I need your help.", npc, creature)
+		npcHandler:setTopic(playerId, 1)
+	end
+	return true
+end
+
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
 	local playerId = player:getId()
