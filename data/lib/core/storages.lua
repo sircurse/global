@@ -2238,7 +2238,11 @@ Storage = {
 		ThreatenedDreams = {},
 		-- update 11.50
 		DangerousDepths = {},
-		HiddenThreats = {},
+		HiddenThreats = { -- Reserved storage from 10120 - 10129
+			QuestLine = 10120,
+			RatterDoor = 10121,
+			ServantDoor = 10122
+		},
 		MakeshiftWarriorOutfits = {},
 		-- update 11.80
 		BattleMageOutfits = {},
