@@ -693,7 +693,12 @@ QuestDoorAction = {
 	[Storage.TheRookieGuard.AcademyDoor] = {
 		itemId = false,
 		itemPos = {{x = 32109, y = 32189, z = 8}}
-	}
+	},
+	-- Hidden Threats Quest
+	[Storage.Quest.HiddenThreats.RatterDoor] = {
+		itemId = 1644,
+		itemPos = {{x = 33046, y = 32066, z = 12}}
+	},
 }
 
 QuestDoorUnique = {

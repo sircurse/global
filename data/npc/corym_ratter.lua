@@ -61,7 +61,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if(MsgContains(message, "hi")) then
-		if player:getStorageValue(Storage.HiddenThreats.QuestLine) == 0 then
+		if player:getStorageValue(Storage.Quest.HiddenThreats.QuestLine) == 0 then
 			npcHandler:say({
 				"Welcome stranger! You might be surprised that I don't attack you immediately. The point is, that I think you could be useful to me. What you see in front of you is a great mine of the corym! ...",
 				"We dig up all what mother earth delivers to us, valuable natural resources. But the yield is getting worse and here I need your help."
@@ -75,7 +75,8 @@ local function creatureSayCallback(npc, creature, type, message)
 		end
 	elseif(MsgContains(message, "yes")) then
 		if(npcHandler:getTopic(playerId) == 2) then
-			player:setStorageValue(Storage.HiddenThreats.QuestLine, 1)
+			player:setStorageValue(Storage.Quest.HiddenThreats.QuestLine, 1)
+			player:setStorageValue(Storage.Quest.HiddenThreats.RatterDoor, 1)
 			npcHandler:say("Nice! I have opened the mine for you. But take care of you! The monsters of depth won't spare you.", npc, creature)
 			npcHandler:setTopic(playerId, 2)
 		end

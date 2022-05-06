@@ -2239,7 +2239,7 @@ Storage = {
 		-- update 11.50
 		DangerousDepths = {},
 		HiddenThreats = { -- Reserved storage from 10120 - 10129
-			Questline = 10120,
+			QuestLine = 10120,
 			RatterDoor = 10121,
 			ServantDoor = 10122
 		},
