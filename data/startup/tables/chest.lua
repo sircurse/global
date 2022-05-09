@@ -43,8 +43,6 @@ ChestAction = {
 	}
 }
 
-
-
 ChestUnique = {
 	-- Keys quest
 	-- data\scripts\actions\system\quest_reward_key.lua
