@@ -699,6 +699,22 @@ QuestDoorAction = {
 		itemId = 1644,
 		itemPos = {{x = 33046, y = 32066, z = 12}}
 	},
+	[Storage.Quest.HiddenThreats.ServantDoor] = {
+		itemId = 1642,
+		itemPos = {{x = 33036, y = 32008, z = 12}}
+	},
+	[Storage.Quest.HiddenThreats.CorymWorksDoor01] = {
+		itemId = 1642,
+		itemPos = {{x = 33025, y = 32008, z = 12}}
+	},
+	[Storage.Quest.HiddenThreats.CorymWorksDoor02] = {
+		itemId = 1642,
+		itemPos = {{x = 33045, y = 32007, z = 12}}
+	},
+	[Storage.Quest.HiddenThreats.CorymWorksDoor03] = {
+		itemId = 1644,
+		itemPos = {{x = 33001, y = 32047, z = 12}}
+	}
 }
 
 QuestDoorUnique = {
