@@ -52,7 +52,6 @@ end
 
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
-	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.HiddenThreats.QuestLine) == 1 then
 		npcHandler:setMessage(MESSAGE_GREET, {
@@ -125,10 +124,9 @@ end
 
 -- Greeting message
 npcHandler:setMessage(MESSAGE_FAREWELL, 'Good bye, |PLAYERNAME|.')
-	
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-	
+
 npcHandler:addModule(FocusModule:new())
 
 -- npcType registering the npcConfig table

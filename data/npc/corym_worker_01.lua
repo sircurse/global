@@ -52,7 +52,6 @@ end
 
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
-	local playerId = player:getId()
 
 	if player:getStorageValue(Storage.Quest.HiddenThreats.corymRescued01) < 0 then
 		npcHandler:setMessage(MESSAGE_GREET, {
@@ -68,29 +67,19 @@ local function greetCallback(npc, creature, message)
 end
 
 local function creatureSayCallback(npc, creature, type, message)
-	local player = Player(creature)
-	local playerId = player:getId()
+	--local player = Player(creature)
 
 	if not npcHandler:checkInteraction(npc, creature) then
 		return false
 	end
-
---	if(MsgContains(message, "aaa")) then
---			npcHandler:say({
---				"Text text text",
---				"Text text text"
---			}, npc, creature)
---			npcHandler:setTopic(playerId, 1)
---	end
 	return true
 end
 
 -- Greeting message
 npcHandler:setMessage(MESSAGE_FAREWELL, 'Good bye, |PLAYERNAME|.')
-	
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-	
+
 npcHandler:addModule(FocusModule:new())
 
 -- npcType registering the npcConfig table
