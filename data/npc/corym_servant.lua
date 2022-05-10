@@ -52,7 +52,8 @@ end
 
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
-
+	local playerId = player:getId()
+	
 	if player:getStorageValue(Storage.Quest.HiddenThreats.QuestLine) == 1 then
 		npcHandler:setMessage(MESSAGE_GREET, {
 			'We work as hard we can, my master! Wait, I haven\'t seen you here before. You were sent by the Corym Ratter, I see. He misses the courage to visit us and find the reason for {decreasing resources}? He\'s the coward I have expected.'
