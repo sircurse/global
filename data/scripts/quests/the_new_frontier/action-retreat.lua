@@ -3,7 +3,7 @@ function theNewFrontierRetreat.onUse(player, item, fromPosition, target, toPosit
 	local destination = Position(33170, 31247, 11)
 	player:teleportTo(destination)
 	destination:sendMagicEffect(CONST_ME_POFF)
-	player:setStorageValue(Storage.TheNewFrontier.Questline, 23)
+	player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 23)
 	return true
 end
 

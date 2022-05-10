@@ -55,7 +55,7 @@ local function creatureSayCallback(npc, creature, type, message)
 	end
 
 	if MsgContains(message, "battle") then
-		if player:getStorageValue(Storage.TheNewFrontier.Questline) == 24 then
+		if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 24 then
 			npcHandler:say({
 				"Zo you want to enter ze arena, you know ze rulez and zat zere will be no ozer option zan deaz or victory? ...",
 				"My mazter wantz to zurprize hiz opponentz by an unexpected move. He will uze warriorz from ze outzide, zomeone zat no one can azzezz. ...",
@@ -64,22 +64,22 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:setTopic(playerId, 1)
 		end
 	elseif MsgContains(message, "mission") then
-		if player:getStorageValue(Storage.TheNewFrontier.Questline) == 26 then
+		if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 26 then
 			npcHandler:say({
 				"You have done ze impozzible and beaten ze champion. Your mazter will be pleazed. Hereby I cleanze ze poizon from your body. You are now allowed to leave. ...",
 				"For now ze mazter will zee zat you and your alliez are zpared of ze wraz of ze dragon emperor az you are unimportant for hiz goalz. ...",
 				"You may crawl back to your alliez and warn zem of ze gloriouz might of ze dragon emperor and hiz minionz."
 			}, npc, creature)
-			player:setStorageValue(Storage.TheNewFrontier.Questline, 27)
-			player:setStorageValue(Storage.TheNewFrontier.Mission09, 3) --Questlog, The New Frontier Quest "Mission 09: Mortal Combat"
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 27)
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission09, 3) --Questlog, The New Frontier Quest "Mission 09: Mortal Combat"
 			npcHandler:setTopic(playerId, 0)
 		end
 	elseif MsgContains(message, "yes") then
 		if npcHandler:getTopic(playerId) == 1 then
 			npcHandler:say("Asss you wishzz.", npc, creature)
-			player:setStorageValue(Storage.TheNewFrontier.Questline, 25)
-			player:setStorageValue(Storage.TheNewFrontier.Mission08, 2) --Questlog, The New Frontier Quest "Mission 08: An Offer You Can't Refuse"
-			player:setStorageValue(Storage.TheNewFrontier.Mission09, 1) --Questlog, The New Frontier Quest "Mission 09: Mortal Combat"
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 25)
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission08, 2) --Questlog, The New Frontier Quest "Mission 08: An Offer You Can't Refuse"
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission09, 1) --Questlog, The New Frontier Quest "Mission 09: Mortal Combat"
 			npcHandler:setTopic(playerId, 0)
 		end
 	end

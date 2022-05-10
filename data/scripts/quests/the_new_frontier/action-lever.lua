@@ -23,11 +23,11 @@ function theNewFrontierLever.onUse(player, item, fromPosition, target, toPositio
 	end
 
 	if item.actionid == 8005 then
-		if creature:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then
+		if creature:getStorageValue(Storage.Quest.TheNewFrontier.Mission05) == 7 then
 			targetPosition.z = 10
-		elseif creature:getStorageValue(Storage.TheNewFrontier.Mission03) == 3 then
+		elseif creature:getStorageValue(Storage.Quest.TheNewFrontier.Mission03) == 3 then
 			targetPosition.z = 12
-		elseif creature:getStorageValue(Storage.TheNewFrontier.Mission03) < 2 then
+		elseif creature:getStorageValue(Storage.Quest.TheNewFrontier.Mission03) < 2 then
 			targetPosition.z = 14
 		end
 	end

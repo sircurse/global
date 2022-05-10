@@ -3171,12 +3171,12 @@ if not Quests then
 		},
 		[25] = {
 			name = "The New Frontier",
-			startStorageId = Storage.TheNewFrontier.Questline,
+			startStorageId = Storage.Quest.TheNewFrontier.Questline,
 			startStorageValue = 1,
 			missions = {
 				[1] = {
 					name = "Mission 01: New Land",
-					storageId = Storage.TheNewFrontier.Mission01,
+					storageId = Storage.Quest.TheNewFrontier.Mission01,
 					missionId = 10252,
 					startValue = 1,
 					endValue = 3,
@@ -3188,7 +3188,7 @@ if not Quests then
 				},
 				[2] = {
 					name = "Mission 02: From Kazordoon With Love",
-					storageId = Storage.TheNewFrontier.Mission02,
+					storageId = Storage.Quest.TheNewFrontier.Mission02,
 					missionId = 10253,
 					startValue = 1,
 					endValue = 6,
@@ -3206,7 +3206,7 @@ if not Quests then
 				},
 				[3] = {
 					name = "Mission 03: Strangers in the Night",
-					storageId = Storage.TheNewFrontier.Mission03,
+					storageId = Storage.Quest.TheNewFrontier.Mission03,
 					missionId = 10254,
 					startValue = 1,
 					endValue = 3,
@@ -3219,7 +3219,7 @@ if not Quests then
 				},
 				[4] = {
 					name = "Mission 04: The Mine Is Mine",
-					storageId = Storage.TheNewFrontier.Mission04,
+					storageId = Storage.Quest.TheNewFrontier.Mission04,
 					missionId = 10255,
 					startValue = 1,
 					endValue = 2,
@@ -3231,7 +3231,7 @@ if not Quests then
 				},
 				[5] = {
 					name = "Mission 05: Getting Things Busy",
-					storageId = Storage.TheNewFrontier.Mission05,
+					storageId = Storage.Quest.TheNewFrontier.Mission05,
 					missionId = 10256,
 					startValue = 1,
 					endValue = 7,
@@ -3259,7 +3259,7 @@ if not Quests then
 				},
 				[6] = {
 					name = "Mission 06: Days Of Doom",
-					storageId = Storage.TheNewFrontier.Mission06,
+					storageId = Storage.Quest.TheNewFrontier.Mission06,
 					missionId = 10257,
 					startValue = 1,
 					endValue = 3,
@@ -3273,7 +3273,7 @@ if not Quests then
 				},
 				[7] = {
 					name = "Mission 07: Messengers Of Peace",
-					storageId = Storage.TheNewFrontier.Mission07,
+					storageId = Storage.Quest.TheNewFrontier.Mission07,
 					missionId = 10258,
 					startValue = 1,
 					endValue = 3,
@@ -3286,7 +3286,7 @@ if not Quests then
 				},
 				[8] = {
 					name = "Mission 08: An Offer You Can't Refuse",
-					storageId = Storage.TheNewFrontier.Mission08,
+					storageId = Storage.Quest.TheNewFrontier.Mission08,
 					missionId = 10259,
 					startValue = 1,
 					endValue = 2,
@@ -3299,7 +3299,7 @@ if not Quests then
 				},
 				[9] = {
 					name = "Mission 09: Mortal Combat",
-					storageId = Storage.TheNewFrontier.Mission09,
+					storageId = Storage.Quest.TheNewFrontier.Mission09,
 					missionId = 10260,
 					startValue = 1,
 					endValue = 3,
@@ -3312,7 +3312,7 @@ if not Quests then
 				},
 				[10] = {
 					name = "Mission 10: New Horizons",
-					storageId = Storage.TheNewFrontier.Mission10,
+					storageId = Storage.Quest.TheNewFrontier.Mission10,
 					missionId = 10261,
 					startValue = 1,
 					endValue = 1,
@@ -3321,7 +3321,7 @@ if not Quests then
 				},
 				[11] = {
 					name = "Tome of Knowledge Counter",
-					storageId = Storage.TheNewFrontier.TomeofKnowledge,
+					storageId = Storage.Quest.TheNewFrontier.TomeofKnowledge,
 					missionId = 10262,
 					startValue = 1,
 					endValue = 12,

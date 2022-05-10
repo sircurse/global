@@ -9,7 +9,7 @@ local function completeTest(cid)
 		return true
 	end
 
-	if player:getStorageValue(Storage.TheNewFrontier.Questline) == 19 then
+	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 19 then
 		player:teleportTo(setting.successPosition)
 		player:say("You have passed the test. Report to Curos.", TALKTYPE_MONSTER_SAY)
 	end
@@ -23,7 +23,7 @@ function minotaurBoss.onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 
-	if player:getStorageValue(Storage.TheNewFrontier.Questline) ~= 18 then
+	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) ~= 18 then
 		player:teleportTo(fromPosition)
 		fromPosition:sendMagicEffect(CONST_ME_TELEPORT)
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You don't have access to this area.")
@@ -31,7 +31,7 @@ function minotaurBoss.onStepIn(creature, item, position, fromPosition)
 	end
 
 	addEvent(completeTest, 2 * 60 * 1000, player.uid)
-	player:setStorageValue(Storage.TheNewFrontier.Questline, 19)
+	player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 19)
 	player:teleportTo(setting.arenaPosition)
 	setting.arenaPosition:sendMagicEffect(CONST_ME_TELEPORT)
 	return true

@@ -14,11 +14,11 @@ function elevatorLever.onUse(cid, item, fromPosition, itemEx, toPosition)
 	local thing = getTopCreature(k[1]).uid
 	if(item.actionid == 9120 and item.itemid == 2772) then -- elevator to Farmine
 		if(isPlayer(thing)) then
-			if cid:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then -- if Farmine is on Stage 3
+			if cid:getStorageValue(Storage.Quest.TheNewFrontier.Mission05) == 7 then -- if Farmine is on Stage 3
 				k[2].z = 10
-			elseif cid:getStorageValue(Storage.TheNewFrontier.Mission03) >= 2 then -- if Farmine is on Stage 2
+			elseif cid:getStorageValue(Storage.Quest.TheNewFrontier.Mission03) >= 2 then -- if Farmine is on Stage 2
 				k[2].z = 12
-			elseif cid:getStorageValue(Storage.TheNewFrontier.Mission03) < 2 then -- if Farmine is on Stage 1
+			elseif cid:getStorageValue(Storage.Quest.TheNewFrontier.Mission03) < 2 then -- if Farmine is on Stage 1
 				k[2].z = 14
 			end
 			doTeleportThing(thing, k[2], false)

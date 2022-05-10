@@ -8,10 +8,10 @@ function trap.onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 
-	if player:getStorageValue(Storage.TheNewFrontier.Questline) == 22 then
+	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 22 then
 		--Questlog, The New Frontier Quest "Mission 07: Messengers Of Peace"
-		player:setStorageValue(Storage.TheNewFrontier.Mission07, 2)
-		player:setStorageValue(Storage.TheNewFrontier.Questline, 23)
+		player:setStorageValue(Storage.Quest.TheNewFrontier.Mission07, 2)
+		player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 23)
 	end
 
 	player:teleportTo(destination)

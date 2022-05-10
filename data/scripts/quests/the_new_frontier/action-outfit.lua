@@ -1,6 +1,6 @@
 local theNewFrontierOutfit = Action()
 function theNewFrontierOutfit.onUse(player, item)
-	if player:getStorageValue(Storage.TheNewFrontier.Questline) == 26 then
+	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 26 then
 		player:addOutfit(335, 0)
 		player:addOutfit(336, 0)
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have gained your new outfit and may leave the reward room now!")
