@@ -52,7 +52,8 @@ end
 
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
-
+	local playerId = player:getId()
+	
 	if player:getStorageValue(Storage.Quest.HiddenThreats.QuestLine) < 1 then
 		npcHandler:setMessage(MESSAGE_GREET, {
 			'Welcome stranger! You might be surprised that I don\'t attack you immediately. The point is, that I think you could be useful to me. What you see in front of you is a great mine of the corym! ...',
