@@ -10,10 +10,8 @@ function shardOfCorruptionKill.onKill(creature, target)
 	end
 
 	local player = creature:getPlayer()
-	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 12 then
-		--Questlog, The New Frontier Quest 'Mission 04: The Mine Is Mine'
-		player:setStorageValue(Storage.Quest.TheNewFrontier.Mission04, 2)
-		player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 13)
+	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 11 then
+		player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 12)
 	end
 	return true
 end

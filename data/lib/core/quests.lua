@@ -3181,9 +3181,9 @@ if not Quests then
 					startValue = 1,
 					endValue = 3,
 					states = {
-						[1] = "Ongulf sends you to explore the passage to the east of farmine.",
-						[2] = "You have found the passage through the mountains and can report Ongulf about your success.",
-						[3] = "You already reported Ongulf your success! Ask Ongulf for new mission!"
+						[1] = "Explore the new land and reach the bottom of the mountain.",
+						[2] = "You have found a passage from the mountains. You can report back to Ongulf.",
+						[3] = "You have reported the scouted route to Ongulf."
 					}
 				},
 				[2] = {
@@ -3191,17 +3191,14 @@ if not Quests then
 					storageId = Storage.Quest.TheNewFrontier.Mission02,
 					missionId = 10253,
 					startValue = 1,
-					endValue = 6,
+					endValue = 4,
 					states = {
-						[1] = "Ongulf will tell you that he needs to send a message to the dwarves in Kazordoon. \z
-						Travel there and then walk to the Dwarf Mines to the west. Cross the two rivers and find Melfar.",
-						[2] = "Melfar gave you a Flask with Beaver Bait that you must use on the 3 \z
-						trees(Trees will be marked on your map).",
-						[3] = "You marked 1 of 3 trees with Beaver Bait in near the Dwarf Mines",
-						[4] = "You marked 2 of 3 trees with Beaver Bait in near the Dwarf Mines",
-						[5] = "You marked all 3 trees with Beaver Bait in near the Dwarf Mines. \z
-						Return to talk to Melfar before heading back to Farmine.",
-						[6] = "Return to Ongulf and report your mission!"
+						[1] = "Find Melfar of the imperial mining guild close to a mine entrance west of Kazordoon. \z
+						Ask him to send more miners and wood.",
+						[2] = "Prepare the three trees which Melfar marked on your map with the beaver bait. \z
+						Once you've marked all three return to Melfar and tell him about your success.",
+						[3] = "Melfar has finally promised to send more miners and wood. Report this to Ongulf in Farmine.",
+						[4] = "You have reported that Melfar will send more miners and wood for Farmine."
 					}
 				},
 				[3] = {
@@ -3211,10 +3208,11 @@ if not Quests then
 					startValue = 1,
 					endValue = 3,
 					states = {
-						[1] = "You need to find the tribe which lives in the mountains. \z
-						Find some vines in this mountain, climb up there and find out who is spying on us!",
-						[2] = "Return to Ongulf and report your mission about primitive humans.",
-						[3] = "You already reported Ongulf about primitive humans! Ask Ongulf for new mission!"
+						[1] = "Find the unknown stalkers somewhere in the mountains. They apparently climbed up \z
+						somewhere during their escape. Try to negotiate a peaceful agreement if possible.",
+						[2] = "You have talked to the leader of the primitive humans and have assured their peacefulness. \z
+						Report this to Ongulf back in the base.",
+						[3] = "You have negotiated a peacful agreement between the dwarfs and the local primitives."
 					}
 				},
 				[4] = {
@@ -3224,9 +3222,9 @@ if not Quests then
 					startValue = 1,
 					endValue = 2,
 					states = {
-						[1] = "Head back to the levers and this time use the left one. \z
-						Go North through the tunnel of Stone Golems. Kill the boss, Shard of Corruption at the end of the tunnel.",
-						[2] = "You killed the Shard of Corruption. Return to Ongulf and report your mission!"
+						[1] = "Free the mine of the monstrous threat. Use a lift to reach the mines and look for a leader \z
+						of the stone creatures. Slay this creature and report back to Ongulf.",
+						[2] = "You have slain the monster that terrorised the mines."
 					}
 				},
 				[5] = {
@@ -3234,60 +3232,105 @@ if not Quests then
 					storageId = Storage.Quest.TheNewFrontier.Mission05,
 					missionId = 10256,
 					startValue = 1,
-					endValue = 7,
+					endValue = 2,
 					states = {
-						[1] = "This mission consists of getting support from 6 people (King Tibianus in Thais, Leeland in Venore, \z
-						Angus in Port Hope, Wyrdin in the Ivory Towers, Telas in Edron, Humgolf in Kazordoon  around Tibia. \z
-						You need to ask for farmine and then you either need to Flatter, Threaten, Impress, Bluff, Reason or Plea him!",
-						[2] = "You got support from 1 of 6 people, King Tibianus in Thais, Leeland in Venore, Angus in Port Hope, \z
-						Wyrdin in the Ivory Towers, Telas in Edron and Humgolf in Kazordoon. \z
-						You need to ask for farmine and then you either need to Flatter, Threaten, Impress, Bluff, Reason or Plea him!",
-						[3] = "You got support from 2 of 6 people, King Tibianus in Thais, Leeland in Venore, Angus in Port Hope, \z
-						Wyrdin in the Ivory Towers, Telas in Edron and Humgolf in Kazordoon. \z
-						You need to ask for farmine and then you either need to Flatter, Threaten, Impress, Bluff, Reason or Plea him!",
-						[4] = "You got support from 3 of 6 people, King Tibianus in Thais, Leeland in Venore, Angus in Port Hope, \z
-						Wyrdin in the Ivory Towers, Telas in Edron and Humgolf in Kazordoon. \z
-						You need to ask for farmine and then you either need to Flatter, Threaten, Impress, Bluff, Reason or Plea him!",
-						[5] = "You got support from 4 of 6 people, King Tibianus in Thais, Leeland in Venore, Angus in Port Hope, \z
-						Wyrdin in the Ivory Towers, Telas in Edron and Humgolf in Kazordoon. \z
-						You need to ask for farmine and then you either need to Flatter, Threaten, Impress, Bluff, Reason or Plea him!",
-						[6] = "You got support from 5 of 6 people, King Tibianus in Thais, Leeland in Venore, Angus in Port Hope, \z
-						Wyrdin in the Ivory Towers, Telas in Edron and Humgolf in Kazordoon. \z
-						You need to ask for farmine and then you either need to Flatter, Threaten, Impress, Bluff, Reason or Plea him!",
-						[7] = "You got support from all needed people to help farmine! Return to Ongulf and report your mission!"
+						[1] = "Try getting the support of the people mentioned. Talk to them about \"farmine\", then \z
+							choose the \"flaatter\", \"threaten\", \"impress\", \"bluff\", \"reason\" or \"plea\" and report \z
+							any progress to Ongulf.",
+						[2] = "You have gained the necessary support for Farmine."
 					}
 				},
 				[6] = {
-					name = "Mission 06: Days Of Doom",
-					storageId = Storage.Quest.TheNewFrontier.Mission06,
+					name = "Mission 5: Support of Kazordoon's Worm Tamer",
+					storageId = Storage.Quest.TheNewFrontier.Mission5_6_Humgolf,
 					missionId = 10257,
 					startValue = 1,
-					endValue = 3,
+					endValue = 1,
 					states = {
-						[1] = "Go to Curos, leader of the Orcs, in the middle of the Zao Steppe in the north-east area of an Orc camp. \z
-						Ask for a mission and accept it.",
-						[2] = "Enter the ring of battle, close to Curos quarter. \z
-						Face Mooh'Tah Master in a battle and survive for two minutes. Return to him after you have passed this test.",
-						[3] = "You passed the test of Curos. Return to Ongulf and report your mission!"
+						[1] = "Talk to the worm tamer in Kazordoon."
 					}
 				},
 				[7] = {
-					name = "Mission 07: Messengers Of Peace",
-					storageId = Storage.Quest.TheNewFrontier.Mission07,
+					name = "Mission 5: Support of the Edron Academy",
+					storageId = Storage.Quest.TheNewFrontier.Mission5_4_Wydrin,
 					missionId = 10258,
 					startValue = 1,
-					endValue = 3,
+					endValue = 1,
 					states = {
-						[1] = "You now have to contact the Lizards, the real rulers of Zao. \z
-						Find them, contact them, talk to them, scare them, bribe them, whatever.",
-						[2] = "You have been trapped! Find a way out!",
-						[3] = "You found the Lizards!"
+						[1] = "Talk to the magician Wyrdin in the Edron Academy."
 					}
 				},
 				[8] = {
+					name = "Mission 5: Support of the Explorer Society",
+					storageId = Storage.Quest.TheNewFrontier.Mission5_3_Angus,
+					missionId = 10259,
+					startValue = 1,
+					endValue = 1,
+					states = {
+						[1] = "Talk to the representative of the Explorer Society in Port Hope."
+					}
+				},
+				[9] = {
+					name = "Mission 5: Support of the Inventor Telas",
+					storageId = Storage.Quest.TheNewFrontier.Mission5_5_Telas,
+					missionId = 10260,
+					startValue = 1,
+					endValue = 1,
+					states = {
+						[1] = "Talk to the inventor Telas in Edron."
+					}
+				},
+				[10] = {
+					name = "Mission 5: Support of the Thaian King",
+					storageId = Storage.Quest.TheNewFrontier.Mission5_1_KingTibianus,
+					missionId = 10261,
+					startValue = 1,
+					endValue = 1,
+					states = {
+						[1] = "Talk to king Tibianus in the thaian castle."
+					}
+				},
+				[11] = {
+					name = "Mission 5: Support of the Venorean Traders",
+					storageId = Storage.Quest.TheNewFrontier.Mission5_2_Leeland,
+					missionId = 10262,
+					startValue = 1,
+					endValue = 1,
+					states = {
+						[1] = "Talk to Leeland Slim, the representative of the Venorean Traders."
+					}
+				},
+				[12] = {
+					name = "Mission 06: Days Of Doom",
+					storageId = Storage.Quest.TheNewFrontier.Mission06,
+					missionId = 10263,
+					startValue = 1,
+					endValue = 5,
+					states = {
+						[1] = "Try to pacify the orcs of the steppe. It is probably necessary to find some leader of the orcish tribes.",
+						[2] = "You have talked to the minotaur leaders of the orcs. They agreed to spare Farmine if you \z
+						prove your worth in their arena. You will have to survive against Mooh'Tah master for 2 minutes, so prepare!",
+						[3] = "You have survived the arena. Talk to Curos again about your mission.",
+						[4] = "Your negotiations had moderate success. Your can report back to Ongulf.",
+						[5] = "You have ensured a brittle peace between Farmine and the orcs."
+					}
+				},
+				[13] = {
+					name = "Mission 07: Messengers Of Peace",
+					storageId = Storage.Quest.TheNewFrontier.Mission07,
+					missionId = 10264,
+					startValue = 1,
+					endValue = 2,
+					states = {
+						[1] = "Find a lizardman somewhere in the north and try to start a negotiation of peace.",
+						[2] = "It seems that the lizardmen are not interested in peace and you will have to focus \z
+						on other problems at hand."
+					}
+				},
+				[14] = {
 					name = "Mission 08: An Offer You Can't Refuse",
 					storageId = Storage.Quest.TheNewFrontier.Mission08,
-					missionId = 10259,
+					missionId = 10265,
 					startValue = 1,
 					endValue = 2,
 					states = {
@@ -3297,10 +3340,10 @@ if not Quests then
 						[2] = "You agreed the Offer."
 					}
 				},
-				[9] = {
+				[15] = {
 					name = "Mission 09: Mortal Combat",
 					storageId = Storage.Quest.TheNewFrontier.Mission09,
-					missionId = 10260,
+					missionId = 10266,
 					startValue = 1,
 					endValue = 3,
 					states = {
@@ -3310,19 +3353,19 @@ if not Quests then
 						[3] = "Go back to Farmine and talk to Ongulf about your mission."
 					}
 				},
-				[10] = {
+				[16] = {
 					name = "Mission 10: New Horizons",
 					storageId = Storage.Quest.TheNewFrontier.Mission10,
-					missionId = 10261,
+					missionId = 10267,
 					startValue = 1,
 					endValue = 1,
 					description = "You now have permission to use the Magic Carpet on the mountain above Farmine, \z
 						Cael now accepts more Tomes of Knowledge from you and you got the Warmaster Outfit!"
 				},
-				[11] = {
+				[17] = {
 					name = "Tome of Knowledge Counter",
 					storageId = Storage.Quest.TheNewFrontier.TomeofKnowledge,
-					missionId = 10262,
+					missionId = 10268,
 					startValue = 1,
 					endValue = 12,
 					states = {

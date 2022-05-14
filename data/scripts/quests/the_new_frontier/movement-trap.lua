@@ -1,25 +1,24 @@
-local destination = Position(33170, 31253, 11)
+local prision = Position(33170, 31253, 11)
 
-local trap = MoveEvent()
+local lizardsTrap = MoveEvent()
 
-function trap.onStepIn(creature, item, position, fromPosition)
+function lizardsTrap.onStepIn(creature, item, position, fromPosition)
 	local player = creature:getPlayer()
 	if not player then
-		return true
+		return false
 	end
 
-	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 22 then
-		--Questlog, The New Frontier Quest "Mission 07: Messengers Of Peace"
-		player:setStorageValue(Storage.Quest.TheNewFrontier.Mission07, 2)
-		player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 23)
+	if player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 21 then
+		player:setStorageValue(Storage.Quest.TheNewFrontier.Mission07, 2) -- Questlog, "Mission 07: Messengers Of Peace"
+		player:setStorageValue(Storage.Quest.TheNewFrontier.Mission08, 1) -- Questlog, "Mission 08: An Offer You Can't Refuse"
+		player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 22)
+		player:say("So far for the negotiating peace. Now you have other problems to handle.", TALKTYPE_MONSTER_SAY)
 	end
-
-	player:teleportTo(destination)
-	destination:sendMagicEffect(CONST_ME_POFF)
-	player:say("So far for the negotiating peace. Now you have other problems to handle.", TALKTYPE_MONSTER_SAY)
+	player:getPosition():sendMagicEffect(CONST_ME_POFF)
+	player:teleportTo(prision)
+	player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	return true
 end
 
-trap:type("stepin")
-trap:aid(8007)
-trap:register()
+lizardsTrap:aid(8007)
+lizardsTrap:register()

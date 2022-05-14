@@ -58,14 +58,14 @@ local function creatureSayCallback(npc, creature, type, message)
 		return false
 	end
 
-	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 9 then
+	if MsgContains(message, "mission") and player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 8 then
 		if npcHandler:getTopic(playerId) == 0 then
 			npcHandler:say("Me people wanting {peace}. No war with others. No war with {little men}. We few. We weak. Need {help}. We not wanting make {war}. No hurt.", npc, creature)
 			npcHandler:setTopic(playerId, 10)
 		end
-	elseif MsgContains(message, "peace") and npcHandler:getTopic(playerId) == 10 and player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 9 then
+	elseif MsgContains(message, "peace") and npcHandler:getTopic(playerId) == 10 and player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 8 then
 		npcHandler:say("Me people wanting peace. No war with others. No war with little men.", npc, creature)
-		player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 10)
+		player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 9)
 		player:setStorageValue(Storage.Quest.TheNewFrontier.Mission03, 2) --Questlog, The New Frontier Quest "Mission 03: Strangers in the Night"
 		npcHandler:setTopic(playerId, 0)
 	elseif MsgContains(message, "help") then

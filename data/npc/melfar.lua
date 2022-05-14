@@ -91,10 +91,12 @@ local function creatureSayCallback(npc, creature, type, message)
 				"Does this sound like something you can handle? "
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 1)
-		elseif(player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 6) then
+		elseif(player:getStorageValue(Storage.Quest.TheNewFrontier.Beaver1) == 1 and player:getStorageValue(Storage.Quest.TheNewFrontier.Beaver2) == 1 and player:getStorageValue(Storage.Quest.TheNewFrontier.Beaver3) == 1) then
 			npcHandler:say("Yes, I can hear them even from here. It has to be a legion of beavers! I'll send the men to get the wood as soon as their gnawing frenzy has settled! You can report to Ongulf that men and wood will be on their way!", npc, creature)
-			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 7)
-			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission02, 6) --Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 6)
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission02, 3) --Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
+		else
+			npcHandler:say("If you place the beaver bait on trees on some strategic locations, we could let the beavers do the work and later on, I'll send men to get the fallen trees.", npc, creature)
 		end
 	elseif(MsgContains(message, "yes")) then
 		if(npcHandler:getTopic(playerId) == 1) then
@@ -104,6 +106,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 5)
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission02, 2) --Questlog, The New Frontier Quest "Mission 02: From Kazordoon With Love"
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission02TreeCounter, 0)
 			player:addItem(9843, 1)
 			for i = 1, #config do
 				player:addMapMark(config[i].position, config[i].type, config[i].description)
