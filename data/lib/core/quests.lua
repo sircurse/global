@@ -3334,10 +3334,9 @@ if not Quests then
 					startValue = 1,
 					endValue = 2,
 					states = {
-						[1] = "Take the boat at the northern of Dragonblaze Peaks to tournament Isle. \z
-						Ask Zurak for a passage. There you'll learn anything you need to know about the great tournament. \z
-						Ask there Chrak for the battle.",
-						[2] = "You agreed the Offer."
+						[1] = "Captured by lizardmen trap you have to find a way out of the prison. Perhaps \z
+						something in your cell might lead you to an opportunity for freedom.",
+						[2] = "You managed to find a way of the captivity of the lizardmen - but for a price."
 					}
 				},
 				[15] = {
@@ -3347,8 +3346,8 @@ if not Quests then
 					startValue = 1,
 					endValue = 3,
 					states = {
-						[1] = "You have to go into the Arena with another player, \z
-						because 2 players are needed, at the same time, to enter. Choose your companion wisely!",
+						[1] = "You are expected to participate in the great tournament of the lizard race. \z
+						Travel to the Isle of Strife and brave the challenges there.",
 						[2] = "You have won! Report Chrak your mission about the battle.",
 						[3] = "Go back to Farmine and talk to Ongulf about your mission."
 					}

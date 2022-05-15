@@ -1070,6 +1070,13 @@ TileAction = {
 		itemPos = {
 			{x = 33023, y = 32106, z = 12}
 		}
+	},
+	-- The New Frontier Quest
+	[50366] = { -- Mission 07 - Hidden Note
+		itemId = false,
+		itemPos = {
+			{x = 33165, y = 31249, z = 11}
+		}
 	}
 }
 

@@ -765,12 +765,6 @@ Oh, how I long to see humans again!]]
 		itemId = 2819,
 		position = {x = 33063, y = 31624, z = 15},
 		text = "Buried forever that he never shall return. Don't remove this seal or bad things may happen."
-	},
-	[63] = {
-		containerId = 10112,
-		itemId = 8747,
-		position = {x = 33165, y = 31249, z = 11},
-		text = "Go to the secret door to the north"
 	}
 }
 

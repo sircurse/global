@@ -81,8 +81,8 @@ local function creatureSayCallback(npc, creature, type, message)
 				"Zere you'll learn anyzing you need to know about ze great tournament."
 			}, npc, creature)
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 24)
-			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission07, 3) --Questlog, The New Frontier Quest "Mission 07: Messengers Of Peace"
-			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission08, 1) --Questlog, The New Frontier Quest "Mission 08: An Offer You Can't Refuse"
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission08, 2) --Questlog, The New Frontier Quest "Mission 08: An Offer You Can't Refuse"
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission09, 1) --Questlog, The New Frontier Quest "Mission 08: An Offer You Can't Refuse"
 			npcHandler:setTopic(playerId, 0)
 		end
 	end
