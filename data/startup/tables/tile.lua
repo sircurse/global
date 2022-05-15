@@ -1054,23 +1054,6 @@ TileAction = {
 			{x = 31951, y = 32174, z = 10}
 		}
 	},
-	-- Hidden Threats Quest
-	[50364] = { -- questline track
-		itemId = false,
-		itemPos = {
-			{x = 33079, y = 32014, z = 13},
-			{x = 33079, y = 32015, z = 13},
-			{x = 33080, y = 32015, z = 13},
-			{x = 33032, y = 32050, z = 13},
-			{x = 33032, y = 32051, z = 13}
-		}
-	},
-	[50365] = { -- create spiders
-		itemId = false,
-		itemPos = {
-			{x = 33023, y = 32106, z = 12}
-		}
-	},
 	-- The New Frontier Quest
 	[50366] = { -- Mission 07 - Hidden Note
 		itemId = false,
