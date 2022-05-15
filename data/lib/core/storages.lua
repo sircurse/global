@@ -2090,7 +2090,10 @@ Storage = {
 			Mission5_4_Wydrin = 51099,
 			Mission5_5_Telas = 51100,
 			Mission5_6_Humgolf = 51101,
-			Mission7_HiddenNote = 51102
+			Mission7_HiddenNote = 51102,
+			Mission9_ArenaDoor = 51103,
+			Mission9_RewardDoor = 51104,
+			Mission10_MagicCarpetDoor = 51105
 		},
 		TomesOfKnowledge = {},
 		UnnaturalSelection = {},
