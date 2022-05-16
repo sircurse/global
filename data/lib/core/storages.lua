@@ -2093,7 +2093,12 @@ Storage = {
 			Mission7_HiddenNote = 51102,
 			Mission9_ArenaDoor = 51103,
 			Mission9_RewardDoor = 51104,
-			Mission10_MagicCarpetDoor = 51105
+			Mission10_MagicCarpetDoor = 51105,
+			Reward = {
+				Chest01 = 51106,
+				Chest02 = 51107,
+				Chest03 = 51108
+			}
 		},
 		TomesOfKnowledge = {},
 		UnnaturalSelection = {},
@@ -2253,7 +2258,6 @@ Storage = {
 				metalFile = 10126,
 				keyFragment01 = 10127,
 				keyFragment02 = 10128
-
 			},
 			corymRescued01 = 10129,
 			corymRescued02 = 10130,

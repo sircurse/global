@@ -5801,7 +5801,8 @@ if not Quests then
 					states = {
 						[1] = "Ongulf will be anxious to learn about your latest adventures. Travel back to Farmine \z
 						for a final report.",
-						[2] = "You now have access to the magic carpet." -- This last questlog message is not accurate, need to update.
+						[2] = "Ongulf got very satisfied with your journey, this land is yours to be taken. You can \z
+						find now on top of the mountain a red carpet, it might offer you access to some cities." -- This last questlog message is not accurate, need to update.
 					}
 				},
 				[17] = {

@@ -69,7 +69,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				"If you know ze rulez, you might enter ze arena for ze {battle}."
 			}, npc, creature)
 			npcHandler:setTopic(playerId, 0)
-		elseif player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 26 then
+		elseif player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 27 then
 			npcHandler:say({
 				"You have done ze impozzible and beaten ze champion. Your mazter will be pleazed. Hereby I cleanze ze \z
 				poizon from your body. You are now allowed to leave. ...",
@@ -77,7 +77,7 @@ local function creatureSayCallback(npc, creature, type, message)
 				are unimportant for hiz goalz. ...",
 				"You may crawl back to your alliez and warn zem of ze gloriouz might of ze dragon emperor and hiz minionz."
 			}, npc, creature)
-			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 27)
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 28)
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission09, 3) --Questlog, "Mission 09: Mortal Combat"
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission10, 1) --Questlog, "Mission 10: New Horizons"
 			npcHandler:setTopic(playerId, 0)

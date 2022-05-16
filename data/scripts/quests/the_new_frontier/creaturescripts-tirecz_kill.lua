@@ -6,14 +6,16 @@ local function clearArena()
 		spectator = spectators[i]
 		if spectator:isPlayer() then
 			spectator:teleportTo(exitPosition[2])
-			exitPosition[2]:sendMagicEffect(CONST_ME_TELEPORT)
+			exitPosition[2]:sendMagicEffect(COsNST_ME_TELEPORT)
 		else
 			spectator:remove()
 		end
 	end
 end
 
+
 local tireczKill = CreatureEvent("TireczKill")
+
 function tireczKill.onKill(creature, target)
 	local targetMonster = target:getMonster()
 	if not targetMonster then
