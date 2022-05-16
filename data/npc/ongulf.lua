@@ -227,7 +227,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 21)
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission07, 1) --Questlog, The New Frontier Quest "Mission 07: Messengers Of Peace"
 			npcHandler:setTopic(playerId, 0)
-		elseif player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 27 then
+		elseif player:getStorageValue(Storage.Quest.TheNewFrontier.Questline) == 28 then
 			npcHandler:say({
 				"Oh, my! That sounds like a real mess. For now this dragon empire seems otherwise engaged, but we will be on guard thanks to you my friend. We will continue to fortify the base. ...",
 				"This leaves not much to do for you down here. I recommend you continue to explore this strange new land. ...",
@@ -241,7 +241,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			player:addOutfit(335)
 			player:addOutfit(336)
 			player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 28)
+			player:setStorageValue(Storage.Quest.TheNewFrontier.Questline, 29)
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission10, 2) --Questlog, "Mission 10: New Horizons"
 			player:setStorageValue(Storage.Quest.TheNewFrontier.Mission10_MagicCarpetDoor, 1)
 			npcHandler:setTopic(playerId, 0)

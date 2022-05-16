@@ -22,5 +22,5 @@ function lizardsTrap.onStepIn(creature, item, position, fromPosition)
 	return true
 end
 
-lizardsTrap:aid(8007)
+lizardsTrap:aid(50364)
 lizardsTrap:register()
