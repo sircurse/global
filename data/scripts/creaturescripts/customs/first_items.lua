@@ -105,7 +105,7 @@ function mainFirstItems.onLogin(player)
 		player:addItem(targetVocation.items[i][1], targetVocation.items[i][2])
 	end
 
-	local backpack = player:addItem(1988)
+	local backpack = player:addItem(2854)
 	if not backpack then
 		return true
 	end
