@@ -22,70 +22,70 @@ rookFirstItems:register()
 local config = {
 	[1] = { -- Sorcerer
 		items = {
-			{2175, 1}, -- spellbook
-			{2190, 1}, -- wand of vortex
-			{8819, 1}, -- magician's robe
-			{8820, 1}, -- mage hat
-			{2468, 1}, -- studded legs
-			{2643, 1}, -- leather boots
-			{2661, 1}  -- scarf
+			{3059, 1}, -- spellbook
+			{3074, 1}, -- wand of vortex
+			{7991, 1}, -- magician's robe
+			{7992, 1}, -- mage hat
+			{3362, 1}, -- studded legs
+			{3552, 1}, -- leather boots
+			{3572, 1}  -- scarf
 		},
 		container = {
-			{2120, 1}, -- rope
-			{2554, 1}, -- shovel
-			{7620, 10}  -- mana potion
+			{3003, 1}, -- rope
+			{5710, 1}, -- light shovel
+			{268, 10}  -- mana potion
 		}
 	},
 	[2] = { -- Druid
 		items = {
-			{2175, 1}, -- spellbook
-			{2182, 1}, -- snakebite rod
-			{8819, 1}, -- magician's robe
-			{8820, 1}, -- mage hat
-			{2468, 1}, -- studded legs
-			{2643, 1}, -- leather boots
-			{2661, 1}  -- scarf
+			{3059, 1}, -- spellbook
+			{3066, 1}, -- snakebite rod
+			{7991, 1}, -- magician's robe
+			{7992, 1}, -- mage hat
+			{3362, 1}, -- studded legs
+			{3552, 1}, -- leather boots
+			{3572, 1}  -- scarf
 		},
 		container = {
-			{2120, 1}, -- rope
-			{2554, 1}, -- shovel
-			{7620, 10}  -- mana potion
+			{3003, 1}, -- rope
+			{5710, 1}, -- light shovel
+			{268, 10}  -- mana potion
 		}
 	},
 	[3] = { -- Paladin
 		items = {
-			{2525, 1}, -- dwarven shield
-			{2389, 5}, -- 5 spears
-			{2660, 1}, -- ranger's cloak
-			{8923, 1}, -- ranger legs
-			{2643, 1}, -- leather boots
-			{2661, 1}, -- scarf
-			{2480, 1}  -- legion helmet
+			{3425, 1}, -- dwarven shield
+			{3277, 5}, -- 5 spears
+			{3571, 1}, -- ranger's cloak
+			{8095, 1}, -- ranger legs
+			{3552, 1}, -- leather boots
+			{3572, 1}, -- scarf
+			{3374, 1}  -- legion helmet
 		},
 		container = {
-			{2120, 1},  -- rope
-			{2554, 1},  -- shovel
-			{7618, 1},  -- health potion
-			{2456, 1},  -- bow
-			{2544, 50}  -- 50 arrows
+			{3003, 1}, -- rope
+			{5710, 1}, -- light shovel
+			{266, 10},  -- health potion
+			{3350, 1},  -- bow
+			{3447, 50}  -- 50 arrows
 		}
 	},
 	[4] = { -- Knight
 		items = {
-			{2525, 1}, -- dwarven shield
-			{8601, 1}, -- steel axe
-			{2465, 1}, -- brass armor
-			{2460, 1}, -- brass helmet
-			{2478, 1}, -- brass legs
-			{2643, 1}, -- leather boots
-			{2661, 1}  -- scarf
+			{3425, 1}, -- dwarven shield
+			{7773, 1}, -- steel axe
+			{3359, 1}, -- brass armor
+			{3354, 1}, -- brass helmet
+			{3372, 1}, -- brass legs
+			{3552, 1}, -- leather boots
+			{3572, 1}  -- scarf
 		},
 		container = {
-			{8602, 1}, -- jagged sword
-			{2439, 1}, -- daramanian mace
-			{2120, 1}, -- rope
-			{2554, 1}, -- shovel
-			{7618, 10}  -- health potion
+			{7774, 1}, -- jagged sword
+			{3327, 1}, -- daramanian mace
+			{3003, 1}, -- rope
+			{5710, 1}, -- light shovel
+			{266, 10},  -- health potion
 		}
 	}
 }
