@@ -1,6 +1,6 @@
 local config = {
     storage = 20001,
-    TCsPerHour = 12,
+    TCsPerHour = 15,
     checkDuplicateIps = true
 }
 
