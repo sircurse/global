@@ -59,6 +59,12 @@ ChestAction = {
 }
 
 ChestUnique = {
+	[false] = {
+		itemId = false,
+		itemPos = {
+			{x = 32604, y = 31908, z = 3}
+		}
+	},
 	-- Keys quest
 	-- data\scripts\actions\system\quest_reward_key.lua
 	-- Deeper fibula quest key 3496
