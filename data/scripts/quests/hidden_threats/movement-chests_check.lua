@@ -12,7 +12,6 @@ function corymChests.onStepOut(creature, item, position, fromPosition)
 end
 
 corymChests:position({x = 33079, y = 32014, z = 13})
-corymChests:position({x = 33079, y = 32014, z = 13})
 corymChests:position({x = 33079, y = 32015, z = 13})
 corymChests:position({x = 33080, y = 32015, z = 13})
 corymChests:position({x = 33032, y = 32050, z = 13})
