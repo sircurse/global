@@ -10,7 +10,7 @@ function kroazurExit.onStepIn(creature, item, position, fromPosition)
 	if not player then
 		return true
 	end
-	
+
 	local teleport = config[item.actionid]
 	if not teleport then
 		return true

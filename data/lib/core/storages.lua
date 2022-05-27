@@ -406,33 +406,6 @@ Storage = {
 			AccessDoor = 50263
 		}
 	},
-	ThreatenedDreams = {
-		-- Reserved storage from 50270 - 50349
-		Start = 50270,
-		TroubledMission01 = 50271,
-		TroubledMission02 = 50272,
-		TroubledMission03 = 50273,
-		FairyMission01 = 50274,
-		FairyMission02 = 50275,
-		FairyMission03 = 50276,
-		FairyMission04 = 50277,
-		DreamMission01 = 50278,
-		DreamCounter = 50279,
-		KroazurTimer = 50280,
-		CoupleMission01 = 50281,
-		CoupleMission02 = 50282,
-		FacelessBaneTime = 50283,
-		Reward01 = 50284,
-		Reward02 = 50285,
-		Reward03 = 50286,
-		TatteredSwanFeathers = 50300,
-		TatteredSwanFeathers01 = 50301,
-		TatteredSwanFeathers02 = 50302,
-		TatteredSwanFeathers03 = 50303,
-		TatteredSwanFeathers04 = 50304,
-		TatteredSwanFeathers05 = 50305,
-		PoacherChest = 50306
-	},
 	FirstDragon = {
 		-- Reserved storage from 50350 - 50379
 		Questline = 50350,
@@ -2243,7 +2216,47 @@ Storage = {
 		ForgottenKnowledge = {},
 		-- update 11.40
 		CultsOfTibia = {},
-		ThreatenedDreams = {},
+		ThreatenedDreams = { -- Reserved storage from 50270 - 50349
+			QuestLine = 50270,
+			Mission01 = {50271,
+				PoacherChest = 50272,
+				PoacherNotes = 50273,
+				FeathersCount = 50274,
+				Feathers1 = 50275,
+				Feathers2 = 50276,
+				Feathers3 = 50277,
+				Feathers4 = 50278,
+				Feathers5 = 50279
+				},
+			Mission02 = {50280,
+				frazzlemawsCount = 50281,
+				enfeebledCount = 50282,
+				kroazurAccess = 50283,
+				kroazurTimer = 50284,
+				kroazurKill = 50285,
+				XXXXXX = 50286
+			},
+			Mission03 = 50281,
+			Mission04 = 50282,
+			Mission05 = 50283,
+			Mission06 = 50284,
+			Mission07 = 50285,
+			FairyMission01 = 50286,
+			FairyMission02 = 50287,
+			FairyMission03 = 50288,
+			FairyMission04 = 50289,
+			DreamMission01 = 50290,
+			DreamCounter = 50291,
+			
+			CoupleMission01 = 50293,
+			CoupleMission02 = 50294,
+			FacelessBaneTime = 50295,
+			Reward = {
+				Reward01 = 50296,
+				Reward02 = 50297,
+				Reward03 = 50298
+				}
+		},
 		-- update 11.50
 		DangerousDepths = {},
 		MakeshiftWarriorOutfits = {},

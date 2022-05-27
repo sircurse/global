@@ -41,7 +41,7 @@ function threatenedLever.onUse(player, item, fromPosition, target, toPosition, i
 				end
 
 				-- Check participant boss timer
-				if config.daily and participant:getStorageValue(Storage.ThreatenedDreams.FacelessBaneTime) > os.time() then
+				if config.daily and participant:getStorageValue(Storage.Quest.ThreatenedDreams.FacelessBaneTime) > os.time() then
 					player:getPosition():sendMagicEffect(CONST_ME_POFF)
 					player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You or a member in your team have to wait ".. config.timeToFightAgain .."  hours to face Faceless Bane again!")
 					return true
@@ -71,7 +71,7 @@ function threatenedLever.onUse(player, item, fromPosition, target, toPosition, i
 			team[i]:teleportTo(config.teleportPosition)
 			team[i]:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have ".. config.timeToDefeatBoss .." minutes to kill and loot this boss. Otherwise you will lose that chance and will be kicked out.")
 			-- Assign boss timer
-			team[i]:setStorageValue(Storage.ThreatenedDreams.FacelessBaneTime, os.time() + config.timeToFightAgain * 60 * 60) -- 20 hours
+			team[i]:setStorageValue(Storage.Quest.ThreatenedDreams.FacelessBaneTime, os.time() + config.timeToFightAgain * 60 * 60) -- 20 hours
 			item:transform(config.leverId)
 			
 				addEvent(function()
