@@ -327,17 +327,13 @@ end
 
 function questAccess.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
-    if player:getStorageValue(Storage.FreeQuests) == 1 then
-		return true
-    end
-    
 	addEvent(playerQuestAccessStart, 500, player:getId(), 0)
 
     item:remove(1)
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Your head starts to hurt as many information flows into it.')
-    
+
     return true
 end
 
-questAccess:id(8149)
+questAccess:id(23985)
 questAccess:register()
