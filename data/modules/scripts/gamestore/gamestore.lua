@@ -4237,10 +4237,10 @@ GameStore.Categories = {
           type = GameStore.OfferTypes.OFFER_TYPE_TEMPLE,
         },
         {
-          icons = { "Tibiacity_Encyclopedia.png" },
+          icons = { "Old_Tome.png" },
           name = "Tibiacity Encyclopedia",
           price = 50,
-          itemtype = 8149,
+          itemtype = 23985,
 		  count = 1,
           description = "<i>All the knowledge behind the world of Curseria, quests and paths to unimaginable locations, all in one diary, from someone whose name is blurred.",
           type = GameStore.OfferTypes.OFFER_TYPE_ITEM,
