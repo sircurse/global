@@ -339,5 +339,5 @@ function questAccess.onUse(player, item, fromPosition, target, toPosition, isHot
     return true
 end
 
-questAccess:id(8155)
+questAccess:id(23985)
 questAccess:register()
