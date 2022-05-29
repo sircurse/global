@@ -327,10 +327,6 @@ end
 
 function questAccess.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
-    --if player:getStorageValue(Storage.FreeQuests) == 1 then
-	--	return true
-    --end
-
 	addEvent(playerQuestAccessStart, 500, player:getId(), 0)
 
     item:remove(1)
