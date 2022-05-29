@@ -2234,27 +2234,30 @@ Storage = {
 				kroazurAccess = 50283,
 				kroazurTimer = 50284,
 				kroazurKill = 50285,
-				XXXXXX = 50286
+				fairiesCounter = 50286,
+				fairy01 = 50286,
+				fairy02 = 50287,
+				fairy03 = 50288,
+				fairy04 = 50289,
+				fairy05 = 50290,
 			},
-			Mission03 = 50281,
-			Mission04 = 50282,
-			Mission05 = 50283,
-			Mission06 = 50284,
-			Mission07 = 50285,
-			FairyMission01 = 50286,
-			FairyMission02 = 50287,
-			FairyMission03 = 50288,
-			FairyMission04 = 50289,
-			DreamMission01 = 50290,
-			DreamCounter = 50291,
-			
-			CoupleMission01 = 50293,
-			CoupleMission02 = 50294,
-			FacelessBaneTime = 50295,
+			Mission03 = 50287,
+			Mission04 = 50288,
+			Mission05 = 50289,
+			Mission06 = 50290,
+			Mission07 = 50291,
+			FairyMission01 = 50292,
+			FairyMission02 = 50293,
+			FairyMission03 = 50294,
+			FairyMission04 = 50295,
+			DreamMission01 = 50296,
+			DreamCounter = 50297,
+			CoupleMission01 = 50298,
+			CoupleMission02 = 50299,
 			Reward = {
-				Reward01 = 50296,
-				Reward02 = 50297,
-				Reward03 = 50298
+				Reward01 = 50301,
+				Reward02 = 50302,
+				Reward03 = 50303
 				}
 		},
 		-- update 11.50
@@ -2290,7 +2293,8 @@ Storage = {
 		-- update 12.00
 		DreamWarriorOutfits = {},
 		TheDreamCourts = {
-			AndrewDoor = 14900
+			AndrewDoor = 14900,
+			FacelessBaneTime = 50300
 		},
 		-- update 12.02
 		TibiaAnniversary = {},
