@@ -181,9 +181,6 @@ local function creatureSayCallback(npc, creature, type, message)
 					"There are five of each of them and you have to find them all to repair the barrier. Spread the gathered moon rays on the moon sculptures. Pour out the starlight over the dream bird trees and let the sunlight shine on the mosaics. ...",
 					"If you charge all fifteen arcane sources with the respective light, Feyrist's protection will be ensured again."
 				}, npc, creature)
-				player:removeItem(25734, 1)
-				player:removeItem(25732, 1)
-				player:removeItem(25730, 1)
 				player:setStorageValue(Storage.Quest.ThreatenedDreams.Mission02[1], 7)
 				npcHandler:setTopic(playerId, 0)
 			else
