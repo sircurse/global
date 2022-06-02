@@ -5911,22 +5911,47 @@ if not Quests then
 					storageId = Storage.Quest.ThreatenedDreams.Mission02[1],
 					missionId = 10430,
 					startValue = 1,
-					endValue = 5,
+					endValue = 8,
 					states = {
 						[1] = function(player)
 							return string.format(
 								"The fae queen asked for your help: Feyrist is threatened by intruders from Roshamuul. Kill 200 nightmare \z
 								monsters and Kroazur. - You killed %d weakened frazzlemaws and %d efeebled silencers.",
-								(math.max(player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02.frazzlemawsCount), 0)),
-								(math.max(player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02.enfeebledCount), 0))
+								(math.max(player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02.FrazzlemawsCount), 0)),
+								(math.max(player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02.EnfeebledCount), 0))
 								)
 							end,
 						[2] = "You killed 200 of the nightmare monsters that are invading Feyrist. Maelyrra was very happy but it seems \z
 						she still has other problems. She may need your help once more.",
 						[3] = "Maelyrra asked you to retrieve an artefact for her: the moon mirror. It was stolen by the tainted fae \z
 						who inhabit the caves underneath Feyrist. She also asked you to free some captured fairies.",
-						[4] = "STATE 4",
-						[5] = "STATE 5"
+						[4] = "You found the moon mirror and freed the captured fairies. Maelyrra was very happy but it seems she \z
+						has another problem. Perhaps you should offer your assistance once more.",
+						[5] = "The barrier that protects Feyrist from the outside world is weakened. To strengthen it again you \z
+						need to find the starlight vial and the sun catcher. Ask Aurita and Taegen for these items.",
+						[6] = "Gather sunlight, starlight and moon rays. You have to do this with the sun catcher on the beach, with \z
+						the starlight vial high in the mountains and with the moon mirror on a glade in the forest.",
+						[7] = "You may now repair the barrier. Charge the five moon sculptures of Feyrist with moon rays, the five \z
+						dreambird trees with starlight and the five sun mosics with sunlight.",
+						[8] = "You repaired tha magical barrier that protects Feyrist from the outside world. The fae's secret realm \z
+						is safe again."
+					}
+				},
+				[3] = {
+					name = "An Unlikely Couple",
+					storageId = Storage.Quest.ThreatenedDreams.Mission03[1],
+					missionId = 10431,
+					startValue = 1,
+					endValue = 4,
+					states = {
+						[1] = "Help Aurita and Taegen and find a spell to transform Aurita's fishtail into legs temporarily. A \z
+						fairy in a small fae village in the southwest of Feyrist might know more.",
+						[2] = "You have succesfully created the magical music notes for the mermaid Aurita. Talk to the faun \z
+						Taegen, he also needs your help.",
+						[3] = "The faun Taegen wants to spend some time with his lover, the mermaid Aurita. He wants to visit her \z
+						home and thus must be able to breath under water. Therefore he needs the rare raven herb.",
+						[4] = "You found the rare raven herb and gave it to Taegen. Now he will create a sun catcher for you. \z
+						You may also ask Aurita for the starlight vial now."
 					}
 				}
 			}

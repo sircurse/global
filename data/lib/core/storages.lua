@@ -2218,7 +2218,7 @@ Storage = {
 		CultsOfTibia = {},
 		ThreatenedDreams = { -- Reserved storage from 50270 - 50349
 			QuestLine = 50270,
-			Mission01 = {50271,
+			Mission01 = {50271, -- Troubled Animals
 				PoacherChest = 50272,
 				PoacherNotes = 50273,
 				FeathersCount = 50274,
@@ -2228,37 +2228,48 @@ Storage = {
 				Feathers4 = 50278,
 				Feathers5 = 50279
 				},
-			Mission02 = {50280,
-				frazzlemawsCount = 50281,
-				enfeebledCount = 50282,
-				kroazurAccess = 50283,
-				kroazurTimer = 50284,
-				kroazurKill = 50285,
-				fairiesCounter = 50286,
-				fairy01 = 50286,
-				fairy02 = 50287,
-				fairy03 = 50288,
-				fairy04 = 50289,
-				fairy05 = 50290,
-			},
-			Mission03 = 50287,
-			Mission04 = 50288,
-			Mission05 = 50289,
-			Mission06 = 50290,
-			Mission07 = 50291,
-			FairyMission01 = 50292,
-			FairyMission02 = 50293,
-			FairyMission03 = 50294,
-			FairyMission04 = 50295,
-			DreamMission01 = 50296,
-			DreamCounter = 50297,
-			CoupleMission01 = 50298,
-			CoupleMission02 = 50299,
-			Reward = {
-				Reward01 = 50301,
-				Reward02 = 50302,
-				Reward03 = 50303
-				}
+			Mission02 = {50280, -- Nightmare Intruders
+				FrazzlemawsCount = 50281,
+				EnfeebledCount = 50282,
+				KroazurAccess = 50283,
+				KroazurTimer = 50284,
+				KroazurKill = 50285,
+				DarkMoomMirror = 50286,
+				FairiesCounter = 50287,
+				Fairy01 = 50288,
+				Fairy02 = 50289,
+				Fairy03 = 50290,
+				Fairy04 = 50291,
+				Fairy05 = 50292,
+				ChargedMoomMirror = 50293,
+				MoonMirrorPos01 = 50294,
+				MoonMirrorPos02 = 50295,
+				MoonMirrorPos03 = 50296,
+				MoonMirrorPos04 = 50297,
+				MoonMirrorPos05 = 50298,
+				ChargedSunCacther = 50299,
+				SunCactherPos01 = 50300,
+				SunCactherPos02 = 50301,
+				SunCactherPos03 = 50302,
+				SunCactherPos04 = 50303,
+				SunCactherPos05 = 50304,
+				ChargedStarlightVial = 50305,
+				StarlightPos01 = 50306,
+				StarlightPos02 = 50307,
+				StarlightPos03 = 50308,
+				StarlightPos04 = 50309,
+				StarlightPos05 = 50310
+				},
+			Mission03 = {50311, -- An Unlikely Couple
+				UnlikelyCouple = 50312,
+				PanpipesTimer = 50313,
+				RavenHerbTimer = 50314,
+				DarkSunCatcher = 50315,
+				EmptyStarlightVial = 50316
+				},
+			Mission04 = {50317,
+				},
+			Mission05 = 50318
 		},
 		-- update 11.50
 		DangerousDepths = {},
@@ -2294,7 +2305,7 @@ Storage = {
 		DreamWarriorOutfits = {},
 		TheDreamCourts = {
 			AndrewDoor = 14900,
-			FacelessBaneTime = 50300
+			FacelessBaneTime = 14901
 		},
 		-- update 12.02
 		TibiaAnniversary = {},
