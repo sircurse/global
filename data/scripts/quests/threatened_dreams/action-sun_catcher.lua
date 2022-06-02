@@ -8,11 +8,11 @@ local config = {
     },
     [25734] = {
         targetPos = {
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX)
+            Position(33419, 32242, 7),
+            Position(33484, 32192, 7),
+            Position(33546, 32155, 7),
+            Position(33547, 32206, 7),
+            Position(33568, 32243, 7)
         },
         usablePeriod = "day",
         failMessage = "The sun has to be shining in order to strengthen the barrier. Wait for the day.",
@@ -43,6 +43,12 @@ function sunCatcher.onUse(player, item, fromPosition, target, toPosition, isHotk
         end
 
         if not player:getPosition():isInRange(tool.fromPos, tool.toPos) then
+            player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+            return true
+        end
+
+        if player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02[1]) ~= 6
+        and player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02[1]) ~= 8 then
             player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
             return true
         end
@@ -80,6 +86,7 @@ function sunCatcher.onUse(player, item, fromPosition, target, toPosition, isHotk
                         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
                     else
                         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
+                        item:transform(25733)
                     end
                 end
             end

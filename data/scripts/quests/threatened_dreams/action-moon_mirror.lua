@@ -31,8 +31,8 @@ local config = {
     }
 }
 
-local darkMoonMirror = Action()
-function darkMoonMirror.onUse(player, item, fromPosition, target, toPosition, isHotkey)
+local moonMirror = Action()
+function moonMirror.onUse(player, item, fromPosition, target, toPosition, isHotkey)
     local tool = config[item.itemid]
     local currentPeriod = getTibiaTimerDayOrNight(getFormattedWorldTime(time))
 
@@ -43,6 +43,12 @@ function darkMoonMirror.onUse(player, item, fromPosition, target, toPosition, is
         end
 
         if not player:getPosition():isInRange(tool.fromPos, tool.toPos) then
+            player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+            return true
+        end
+
+        if player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02[1]) ~= 6
+        and player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02[1]) ~= 8 then
             player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
             return true
         end
@@ -80,6 +86,7 @@ function darkMoonMirror.onUse(player, item, fromPosition, target, toPosition, is
                         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
                     else
                         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
+                        item:transform(25729)
                     end
                 end
             end
@@ -88,5 +95,5 @@ function darkMoonMirror.onUse(player, item, fromPosition, target, toPosition, is
     end
 end
 
-darkMoonMirror:id(25729,25730)
-darkMoonMirror:register()
+moonMirror:id(25729,25730)
+moonMirror:register()

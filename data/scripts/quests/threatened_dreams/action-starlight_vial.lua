@@ -8,11 +8,11 @@ local config = {
     },
     [25732] = {
         targetPos = {
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX),
-            Position(XXXXX, XXXXX, XXXXX)
+            Position(33442, 32201, 7),
+            Position(33458, 32299, 7),
+            Position(33562, 32256, 7),
+            Position(33541, 32244, 7),
+            Position(33529, 32187, 7)
         },
         usablePeriod = "night",
         failMessage = "The stars has to be glittering in order to strengthen the barrier. Wait for the night. ",
@@ -43,6 +43,12 @@ function starlightVial.onUse(player, item, fromPosition, target, toPosition, isH
         end
 
         if not player:getPosition():isInRange(tool.fromPos, tool.toPos) then
+            player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
+            return true
+        end
+
+        if player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02[1]) ~= 6
+        and player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02[1]) ~= 8 then
             player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.failMessage)
             return true
         end
@@ -80,6 +86,7 @@ function starlightVial.onUse(player, item, fromPosition, target, toPosition, isH
                         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[1])
                     else
                         player:sendTextMessage(MESSAGE_EVENT_ADVANCE, tool.successMessage[2])
+                        item:transform(25731)
                     end
                 end
             end
