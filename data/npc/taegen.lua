@@ -178,7 +178,7 @@ local function creatureSayCallback(npc, creature, type, message)
 			elseif player:getItemCount(675) >= 2
 			and player:getItemCount(676) >= 2
 			and player:getItemCount(677) >= 2
-			and player:getItemCount(677) >= 2
+			and player:getItemCount(678) >= 2
 			and player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission03.DarkSunCatcher) < 1 then
 				npcHandler:say({
 					"Alright, I will craft a sun catcher for you."
