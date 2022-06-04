@@ -221,7 +221,7 @@ local questTable = {
 	{storage = Storage.TheNewFrontier.Mission5_1_KingTibianus, storageValue = 1},
 	{storage = Storage.TheNewFrontier.Mission5_2_Leeland, storageValue = 1},
 	{storage = Storage.TheNewFrontier.Mission5_3_Angus, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Mission5_4_Wydrin, storageValue = 1},
+	{storage = Storage.TheNewFrontier.Mission5_4_Wyrdin, storageValue = 1},
 	{storage = Storage.TheNewFrontier.Mission5_5_Telas, storageValue = 1},
 	{storage = Storage.TheNewFrontier.Mission5_6_Humgolf, storageValue = 1},
 	{storage = Storage.TheShatteredIsles.DefaultStart, storageValue = 3},
