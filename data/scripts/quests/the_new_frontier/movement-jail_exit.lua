@@ -21,6 +21,5 @@ function jailExit.onStepIn(creature, item, position, fromPosition)
 	return true
 end
 
-jailExit:type("stepin")
-jailExit:aid(12138)
+jailExit:aid(35004)
 jailExit:register()

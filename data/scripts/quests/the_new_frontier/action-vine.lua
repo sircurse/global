@@ -15,5 +15,5 @@ function theNewFrontierVine.onUse(player, item, fromPosition, target, toPosition
 	return true
 end
 
-theNewFrontierVine:uid(3153,3154)
+theNewFrontierVine:aid(40013)
 theNewFrontierVine:register()

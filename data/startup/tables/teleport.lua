@@ -25,10 +25,10 @@ TeleportAction = {
 			{x = 33039, y = 32103, z = 12}
 		}
 	},
-	[35004] = { -- WORKAROUND TO FIX PORTAL IN CULTS OF CARLIN, REMOVE WHEN THE MAP GET FIXED
-		itemId = 11554,
+	[35004] = { -- The New Frontier Quest - Ztiss room
+		itemId = 1949,
 		itemPos = {
-			{x = 32351, y = 31679, z = 8}
+			{x = 33163, y = 31227, z = 11}
 		}
 	}
 }
