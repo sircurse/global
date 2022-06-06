@@ -202,28 +202,28 @@ local questTable = {
 	{storage = Storage.TheInquisition.TimGuard, storageValue = 1},
 	{storage = Storage.TheInquisition.WalterGuard, storageValue = 1},
 	{storage = Storage.TheInquisition.StorkusVampiredust, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Questline, storageValue = 29},
-	{storage = Storage.TheNewFrontier.Mission01, storageValue = 3},
-	{storage = Storage.TheNewFrontier.Mission02, storageValue = 4},
-	{storage = Storage.TheNewFrontier.Mission03, storageValue = 3},
-	{storage = Storage.TheNewFrontier.Mission04, storageValue = 2},
-	{storage = Storage.TheNewFrontier.Mission05, storageValue = 2},
-	{storage = Storage.TheNewFrontier.Mission06, storageValue = 5},
-	{storage = Storage.TheNewFrontier.Mission07, storageValue = 2},
-	{storage = Storage.TheNewFrontier.Mission08, storageValue = 2},
-	{storage = Storage.TheNewFrontier.Mission09, storageValue = 3},
-	{storage = Storage.TheNewFrontier.Mission10, storageValue = 2},
-	{storage = Storage.TheNewFrontier.Mission10_MagicCarpetDoor, storageValue = 1},
-	{storage = Storage.TheNewFrontier.TomeofKnowledge, storageValue = 12},
-	{storage = Storage.TheNewFrontier.Beaver1, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Beaver2, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Beaver3, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Mission5_1_KingTibianus, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Mission5_2_Leeland, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Mission5_3_Angus, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Mission5_4_Wyrdin, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Mission5_5_Telas, storageValue = 1},
-	{storage = Storage.TheNewFrontier.Mission5_6_Humgolf, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Questline, storageValue = 29},
+	{storage = Storage.Quest.TheNewFrontier.Mission01, storageValue = 3},
+	{storage = Storage.Quest.TheNewFrontier.Mission02, storageValue = 4},
+	{storage = Storage.Quest.TheNewFrontier.Mission03, storageValue = 3},
+	{storage = Storage.Quest.TheNewFrontier.Mission04, storageValue = 2},
+	{storage = Storage.Quest.TheNewFrontier.Mission05, storageValue = 2},
+	{storage = Storage.Quest.TheNewFrontier.Mission06, storageValue = 5},
+	{storage = Storage.Quest.TheNewFrontier.Mission07, storageValue = 2},
+	{storage = Storage.Quest.TheNewFrontier.Mission08, storageValue = 2},
+	{storage = Storage.Quest.TheNewFrontier.Mission09, storageValue = 3},
+	{storage = Storage.Quest.TheNewFrontier.Mission10, storageValue = 2},
+	{storage = Storage.Quest.TheNewFrontier.Mission10_MagicCarpetDoor, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.TomeofKnowledge, storageValue = 12},
+	{storage = Storage.Quest.TheNewFrontier.Beaver1, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Beaver2, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Beaver3, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Mission5_1_KingTibianus, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Mission5_2_Leeland, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Mission5_3_Angus, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Mission5_4_Wydrin, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Mission5_5_Telas, storageValue = 1},
+	{storage = Storage.Quest.TheNewFrontier.Mission5_6_Humgolf, storageValue = 1},
 	{storage = Storage.TheShatteredIsles.DefaultStart, storageValue = 3},
 	{storage = Storage.TheShatteredIsles.TheGovernorDaughter, storageValue = 3},
 	{storage = Storage.TheShatteredIsles.TheErrand, storageValue = 2},
@@ -289,8 +289,8 @@ local questTable = {
 	{storage = Storage.DangerousDepths.Gnomes.Charting, storageValue = 2},
 	{storage = Storage.DangerousDepths.Scouts.Growth, storageValue = 2},
 	{storage = Storage.DangerousDepths.Scouts.Diremaw, storageValue = 2},
-	{storage = Storage.ThreatenedDreams.Start, storageValue = 1},
-	{storage = Storage.ThreatenedDreams.TroubledMission01, storageValue = 4},
+	{storage = Storage.Quest.ThreatenedDreams.QuestLine, storageValue = 1},
+	{storage = Storage.Quest.ThreatenedDreams.Mission01[1], storageValue = 16},
 	{storage = Storage.AdventurersGuild.GreatDragonHunt.WarriorSkeleton, storageValue = 1},
 	{storage = Storage.AdventurersGuild.GreatDragonHunt.WarriorSkeleton, storageValue = 2},
 	{storage = Storage.Quest.Dawnport.Questline, storageValue = 1},
@@ -327,17 +327,13 @@ end
 
 function questAccess.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
-    if player:getStorageValue(Storage.FreeQuests) == 1 then
-		return true
-    end
-    
 	addEvent(playerQuestAccessStart, 500, player:getId(), 0)
 
     item:remove(1)
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Your head starts to hurt as many information flows into it.')
-    
+
     return true
 end
 
-questAccess:id(8149)
+questAccess:id(23985)
 questAccess:register()

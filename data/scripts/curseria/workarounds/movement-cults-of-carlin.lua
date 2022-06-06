@@ -10,5 +10,5 @@ function cultsCarlinFix.onStepIn(creature, item, position, fromPosition)
     return true
 end
 
-cultsCarlinFix:aid(35004)
+cultsCarlinFix:position({x = 32351, y = 31679, z = 8})
 cultsCarlinFix:register()

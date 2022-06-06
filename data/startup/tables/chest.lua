@@ -59,6 +59,12 @@ ChestAction = {
 }
 
 ChestUnique = {
+	[false] = {
+		itemId = false,
+		itemPos = {
+			{x = 32604, y = 31908, z = 3}
+		}
+	},
 	-- Keys quest
 	-- data\scripts\actions\system\quest_reward_key.lua
 	-- Deeper fibula quest key 3496
@@ -283,13 +289,11 @@ ChestUnique = {
 		reward = {{3587, 1}},
 		storage = Storage.Quest.StuddedShield.BananaPremium
 	},
-	-- Rope (kazordoon, emperor's cookies quest)
-	[6018] = {
-		itemId = 2472,
-		itemPos = {x = 32604, y = 31908, z = 3},
-		reward = {{3003, 1}},
-		storage = Storage.Quest.EmperorsCookies.RopeReward
-	},
+
+
+	-- [6018] = empyt -- Free slot for a simple chest quest
+
+
 	-- Explorer brooch quest (kazordoon)
 	[6019] = {
 		itemId = 4240,
@@ -907,6 +911,21 @@ ChestUnique = {
 		weight = 7.50,
 		storage = Storage.Quest.TheNewFrontier.Reward.Chest03
 	},
+	-- Threatened Dreams Quest
+	[6100] = {
+		itemId = 12764, -- Poacher Book
+		itemPos = {x = 32787, y = 31975, z = 11},
+		reward = {{25235, 1}},
+		weight = 13.00,
+		storage = Storage.Quest.ThreatenedDreams.Mission01.PoacherChest
+	},
+	[6101] = { -- Dark Moon Mirror
+		itemId = 25762,
+		itemPos = {x = 33594, y = 32214, z = 9},
+		reward = {{25729, 1}},
+		weight = 2.00,
+		storage = Storage.Quest.ThreatenedDreams.Mission02.DarkMoomMirror
+	},
 
 	-- Reward of others scrips files (varied rewards)
 	-- The First dragon Quest
@@ -1067,11 +1086,5 @@ ChestUnique = {
 	[14035] = {
 		itemId = 2473,
 		itemPos = {x = 31937, y = 32771, z = 13}
-	},
-	-- Others uniques
-	-- Threatened Dreams Quest
-	[14036] = {
-		itemId = 12764,
-		itemPos = {x = 32787, y = 31975, z = 11}
 	}
 }
