@@ -18,14 +18,8 @@ TeleportAction = {
 			{x = 32177, y = 31869, z = 15}
 		}
 	},
-	[35003] = { -- Hidden Threats Quest
-		itemId = 1949,
-		itemPos = {
-			{x = 33040, y = 32081, z = 12},
-			{x = 33039, y = 32103, z = 12}
-		}
-	},
-	[35004] = { -- The New Frontier Quest - Ztiss room
+	-- The New Frontier Quest
+	[35003] = { -- Ztiss exit room
 		itemId = 1949,
 		itemPos = {
 			{x = 33163, y = 31227, z = 11}
