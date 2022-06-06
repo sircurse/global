@@ -18,13 +18,6 @@ TeleportAction = {
 			{x = 32177, y = 31869, z = 15}
 		}
 	},
-	-- The New Frontier Quest
-	[35003] = { -- Ztiss exit room
-		itemId = 1949,
-		itemPos = {
-			{x = 33163, y = 31227, z = 11}
-		}
-	}
 }
 
 TeleportUnique = {
