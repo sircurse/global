@@ -30,14 +30,6 @@
 ]]
 
 ChestAction = {
-	[false] = {
-		itemId = false,
-		itemPos = {
-			{x = 33057, y = 31029, z = 7},
-			{x = 33055, y = 31029, z = 7},
-			{x = 33053, y = 31029, z = 7}
-		}
-	},
 	-- Keys quest
 	[5000] = {
 		itemId = xxxx,
@@ -59,12 +51,6 @@ ChestAction = {
 }
 
 ChestUnique = {
-	[false] = {
-		itemId = false,
-		itemPos = {
-			{x = 32604, y = 31908, z = 3}
-		}
-	},
 	-- Keys quest
 	-- data\scripts\actions\system\quest_reward_key.lua
 	-- Deeper fibula quest key 3496
@@ -289,11 +275,6 @@ ChestUnique = {
 		reward = {{3587, 1}},
 		storage = Storage.Quest.StuddedShield.BananaPremium
 	},
-
-
-	-- [6018] = empyt -- Free slot for a simple chest quest
-
-
 	-- Explorer brooch quest (kazordoon)
 	[6019] = {
 		itemId = 4240,
