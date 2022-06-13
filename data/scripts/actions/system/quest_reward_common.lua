@@ -147,6 +147,7 @@ function questReward.onUse(player, item, fromPosition, itemEx, toPosition)
 				addItemParams.message = "You have found " .. count .. " " .. itemName
 			elseif ItemType(itemid):getCharges() > 0 then
 				addItemParams.message = "You have found " .. itemArticle .. " " .. itemName
+				addItemParams.weight = getItemWeight(itemid)
 			else
 				addItemParams.message = "You have found " .. itemArticle .. " " .. itemName
 			end
