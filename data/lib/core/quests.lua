@@ -2,12 +2,12 @@ if not Quests then
 	Quests = {
 		[1] = {
 			name = "The Queen of the Banshees",
-			startStorageId = Storage.Quest.TheQueenOfTheBanshees.FirstSeal,
+			startStorageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.FirstSeal,
 			startStorageValue = 1,
 			missions = {
 				[1] = {
 					name = "The Hidden Seal",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.FirstSeal,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.FirstSeal,
 					missionId = 1,
 					startValue = 1,
 					endValue = 1,
@@ -15,7 +15,7 @@ if not Quests then
 				},
 				[2] = {
 					name = "The Plague Seal",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.SecondSeal,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.SecondSeal,
 					missionId = 2,
 					startValue = 1,
 					endValue = 1,
@@ -23,7 +23,7 @@ if not Quests then
 				},
 				[3] = {
 					name = "The Seal of Demonrage",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.ThirdSeal,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.ThirdSeal,
 					missionId = 3,
 					startValue = 1,
 					endValue = 1,
@@ -31,7 +31,7 @@ if not Quests then
 				},
 				[4] = {
 					name = "The Seal of Sacrifice",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.FourthSeal,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.FourthSeal,
 					missionId = 4,
 					startValue = 1,
 					endValue = 1,
@@ -39,7 +39,7 @@ if not Quests then
 				},
 				[5] = {
 					name = "The Seal of True Path",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.FifthSeal,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.FifthSeal,
 					missionId = 5,
 					startValue = 1,
 					endValue = 1,
@@ -47,7 +47,7 @@ if not Quests then
 				},
 				[6] = {
 					name = "The Seal of Logic",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.SixthSeal,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.SixthSeal,
 					missionId = 6,
 					startValue = 1,
 					endValue = 1,
@@ -55,7 +55,7 @@ if not Quests then
 				},
 				[7] = {
 					name = "The Kiss of the Banshee Queen",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.LastSeal,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.LastSeal,
 					missionId = 7,
 					startValue = 1,
 					endValue = 1,
@@ -63,7 +63,7 @@ if not Quests then
 				},
 				[8] = {
 					name = "The Final Battle",
-					storageId = Storage.Quest.TheQueenOfTheBanshees.FinalBattle,
+					storageId = Storage.Quest.U7_2.TheQueenOfTheBanshees.FinalBattle,
 					missionId = 8,
 					startValue = 1,
 					endValue = 1,
@@ -73,12 +73,12 @@ if not Quests then
 		},
 		[2] = {
 			name = "The Paradox Tower",
-			startStorageId = Storage.Quest.TheParadoxTower.QuestLine,
+			startStorageId = Storage.Quest.U7_24.TheParadoxTower.QuestLine,
 			startStorageValue = 1,
 			missions = {
 				[1] = {
 					name = "The Feared Hugo",
-					storageId = Storage.Quest.TheParadoxTower.TheFearedHugo,
+					storageId = Storage.Quest.U7_24.TheParadoxTower.TheFearedHugo,
 					missionId = 9,
 					startValue = 1,
 					endValue = 4,
@@ -91,7 +91,7 @@ if not Quests then
 				},
 				[2] = {
 					name = "Favorite colour: Green",
-					storageId = Storage.Quest.TheParadoxTower.FavoriteColour,
+					storageId = Storage.Quest.U7_24.TheParadoxTower.FavoriteColour,
 					missionId = 10,
 					startValue = 1,
 					endValue = 2,
@@ -102,7 +102,7 @@ if not Quests then
 				},
 				[3] = {
 					name = "The Secret of Mathemagics",
-					storageId = Storage.Quest.TheParadoxTower.Mathemagics,
+					storageId = Storage.Quest.U7_24.TheParadoxTower.Mathemagics,
 					missionId = 10,
 					startValue = 1,
 					endValue = 2,
@@ -4334,8 +4334,8 @@ if not Quests then
 				},
 				[13] = {
 					name = "Hidden Threats",
-					storageId = Storage.Quest.HiddenThreats.QuestLine,
-					missionId = 10329,
+					storageId = Storage.Quest.U11_50.HiddenThreats.QuestLine,
+					missionId = 10409,
 					startValue = 1,
 					endValue = 5,
 					states = {
@@ -4347,7 +4347,7 @@ if not Quests then
 						rust before forging them together. You have to find a way to rebuild the key. This might open the doors.",
 						[4] = "With the forged key you have unlocked the three areas. The Corym Servant was very relieved  \z
 						and asked you to bring 20 units of rare earth.",
-						[5] = "You have brought 20 units of rare earth to Corym Servant. He was very tahnkful and gave you  \z
+						[5] = "You have brought 20 units of rare earth to Corym Servant. He was very thankful and gave you  \z
 						a reward. The revolution should now take place as intended."
 					}
 				}
@@ -5295,12 +5295,12 @@ if not Quests then
 		},
 		[43] = {
 			name = "Dawnport",
-			startStorageId = Storage.Quest.Dawnport.Questline,
+			startStorageId = Storage.Quest.U10_55.Dawnport.Questline,
 			startStorageValue = 1,
 			missions = {
 				[1] = {
 					name = "In the Adventures Outpost",
-					storageId = Storage.Quest.Dawnport.GoMain,
+					storageId = Storage.Quest.U10_55.Dawnport.GoMain,
 					missionId = 10389,
 					startValue = 1,
 					endValue = 2,
@@ -5309,7 +5309,7 @@ if not Quests then
 				},
 				[2] = {
 					name = "The Lost Amulet",
-					storageId = Storage.Quest.Dawnport.TheLostAmulet,
+					storageId = Storage.Quest.U10_55.Dawnport.TheLostAmulet,
 					missionId = 10390,
 					startValue = 1,
 					endValue = 3,
@@ -5321,7 +5321,7 @@ if not Quests then
 				},
 				[3] = {
 					name = "The Stolen Log Book",
-					storageId = Storage.Quest.Dawnport.TheStolenLogBook,
+					storageId = Storage.Quest.U10_55.Dawnport.TheStolenLogBook,
 					missionId = 10391,
 					startValue = 1,
 					endValue = 2,
@@ -5332,7 +5332,7 @@ if not Quests then
 				},
 				[4] = {
 					name = "The Rare Herb",
-					storageId = Storage.Quest.Dawnport.TheRareHerb,
+					storageId = Storage.Quest.U10_55.Dawnport.TheRareHerb,
 					missionId = 10392,
 					startValue = 1,
 					endValue = 3,
@@ -5344,7 +5344,7 @@ if not Quests then
 				},
 				[5] = {
 					name = "The Dorm Key",
-					storageId = Storage.Quest.Dawnport.TheDormKey,
+					storageId = Storage.Quest.U10_55.Dawnport.TheDormKey,
 					missionId = 10393,
 					startValue = 1,
 					endValue = 5,
@@ -5580,12 +5580,12 @@ if not Quests then
 		},
 		[45] = {
 			name = "The New Frontier",
-			startStorageId = Storage.Quest.TheNewFrontier.Questline,
+			startStorageId = Storage.Quest.U8_54.TheNewFrontier.Questline,
 			startStorageValue = 1,
 			missions = {
 				[1] = {
 					name = "Mission 01: New Land",
-					storageId = Storage.Quest.TheNewFrontier.Mission01,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission01,
 					missionId = 10409,
 					startValue = 1,
 					endValue = 3,
@@ -5597,7 +5597,7 @@ if not Quests then
 				},
 				[2] = {
 					name = "Mission 02: From Kazordoon With Love",
-					storageId = Storage.Quest.TheNewFrontier.Mission02,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission02[1],
 					missionId = 10410,
 					startValue = 1,
 					endValue = 4,
@@ -5612,7 +5612,7 @@ if not Quests then
 				},
 				[3] = {
 					name = "Mission 03: Strangers in the Night",
-					storageId = Storage.Quest.TheNewFrontier.Mission03,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission03,
 					missionId = 10411,
 					startValue = 1,
 					endValue = 3,
@@ -5626,7 +5626,7 @@ if not Quests then
 				},
 				[4] = {
 					name = "Mission 04: The Mine Is Mine",
-					storageId = Storage.Quest.TheNewFrontier.Mission04,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission04,
 					missionId = 10412,
 					startValue = 1,
 					endValue = 2,
@@ -5638,7 +5638,7 @@ if not Quests then
 				},
 				[5] = {
 					name = "Mission 05: Getting Things Busy",
-					storageId = Storage.Quest.TheNewFrontier.Mission05,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission05[1],
 					missionId = 10413,
 					startValue = 1,
 					endValue = 2,
@@ -5651,7 +5651,7 @@ if not Quests then
 				},
 				[6] = {
 					name = "Mission 5: Support of Kazordoon's Worm Tamer",
-					storageId = Storage.Quest.TheNewFrontier.Mission5_6_Humgolf,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission05.Humgolf,
 					missionId = 10414,
 					startValue = 1,
 					endValue = 1,
@@ -5661,7 +5661,7 @@ if not Quests then
 				},
 				[7] = {
 					name = "Mission 5: Support of the Edron Academy",
-					storageId = Storage.Quest.TheNewFrontier.Mission5_4_Wyrdin,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission05.Wyrdin,
 					missionId = 10415,
 					startValue = 1,
 					endValue = 1,
@@ -5671,7 +5671,7 @@ if not Quests then
 				},
 				[8] = {
 					name = "Mission 5: Support of the Explorer Society",
-					storageId = Storage.Quest.TheNewFrontier.Mission5_3_Angus,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission05.Angus,
 					missionId = 10416,
 					startValue = 1,
 					endValue = 1,
@@ -5681,7 +5681,7 @@ if not Quests then
 				},
 				[9] = {
 					name = "Mission 5: Support of the Inventor Telas",
-					storageId = Storage.Quest.TheNewFrontier.Mission5_5_Telas,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission05.Telas,
 					missionId = 10417,
 					startValue = 1,
 					endValue = 1,
@@ -5691,7 +5691,7 @@ if not Quests then
 				},
 				[10] = {
 					name = "Mission 5: Support of the Thaian King",
-					storageId = Storage.Quest.TheNewFrontier.Mission5_1_KingTibianus,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission05.KingTibianus,
 					missionId = 10418,
 					startValue = 1,
 					endValue = 1,
@@ -5701,7 +5701,7 @@ if not Quests then
 				},
 				[11] = {
 					name = "Mission 5: Support of the Venorean Traders",
-					storageId = Storage.Quest.TheNewFrontier.Mission5_2_Leeland,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission05.Leeland,
 					missionId = 10419,
 					startValue = 1,
 					endValue = 1,
@@ -5711,7 +5711,7 @@ if not Quests then
 				},
 				[12] = {
 					name = "Mission 06: Days Of Doom",
-					storageId = Storage.Quest.TheNewFrontier.Mission06,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission06,
 					missionId = 10420,
 					startValue = 1,
 					endValue = 5,
@@ -5726,7 +5726,7 @@ if not Quests then
 				},
 				[13] = {
 					name = "Mission 07: Messengers Of Peace",
-					storageId = Storage.Quest.TheNewFrontier.Mission07,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission07[1],
 					missionId = 10421,
 					startValue = 1,
 					endValue = 2,
@@ -5738,7 +5738,7 @@ if not Quests then
 				},
 				[14] = {
 					name = "Mission 08: An Offer You Can't Refuse",
-					storageId = Storage.Quest.TheNewFrontier.Mission08,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission08,
 					missionId = 10422,
 					startValue = 1,
 					endValue = 2,
@@ -5750,7 +5750,7 @@ if not Quests then
 				},
 				[15] = {
 					name = "Mission 09: Mortal Combat",
-					storageId = Storage.Quest.TheNewFrontier.Mission09,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission09[1],
 					missionId = 10423,
 					startValue = 1,
 					endValue = 3,
@@ -5765,7 +5765,7 @@ if not Quests then
 				},
 				[16] = {
 					name = "Mission 10: New Horizons",
-					storageId = Storage.Quest.TheNewFrontier.Mission10,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.Mission10[1],
 					missionId = 10424,
 					startValue = 1,
 					endValue = 2,
@@ -5778,7 +5778,7 @@ if not Quests then
 				},
 				[17] = {
 					name = "Tome of Knowledge Counter",
-					storageId = Storage.Quest.TheNewFrontier.TomeofKnowledge,
+					storageId = Storage.Quest.U8_54.TheNewFrontier.TomeofKnowledge,
 					missionId = 10425,
 					startValue = 1,
 					endValue = 12,
@@ -5863,12 +5863,12 @@ if not Quests then
 		},
 		[47] = {
 			name = "Threatened Dreams",
-			startStorageId = Storage.Quest.ThreatenedDreams.QuestLine,
+			startStorageId = Storage.Quest.U11_40.ThreatenedDreams.QuestLine,
 			startStorageValue = 1,
 			missions = {
 				[1] = {
 					name = "Troubled Animals",
-					storageId = Storage.Quest.ThreatenedDreams.Mission01[1],
+					storageId = Storage.Quest.U11_40.ThreatenedDreams.Mission01[1],
 					missionId = 10429,
 					startValue = 1,
 					endValue = 16,
@@ -5908,7 +5908,7 @@ if not Quests then
 				},
 				[2] = {
 					name = "Nightmare Intruders",
-					storageId = Storage.Quest.ThreatenedDreams.Mission02[1],
+					storageId = Storage.Quest.U11_40.ThreatenedDreams.Mission02[1],
 					missionId = 10430,
 					startValue = 1,
 					endValue = 8,
@@ -5917,8 +5917,8 @@ if not Quests then
 							return string.format(
 								"The fae queen asked for your help: Feyrist is threatened by intruders from Roshamuul. Kill 200 nightmare \z
 								monsters and Kroazur. - You killed %d weakened frazzlemaws and %d efeebled silencers.",
-								(math.max(player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02.FrazzlemawsCount), 0)),
-								(math.max(player:getStorageValue(Storage.Quest.ThreatenedDreams.Mission02.EnfeebledCount), 0))
+								(math.max(player:getStorageValue(Storage.Quest.U11_40.ThreatenedDreams.Mission02.FrazzlemawsCount), 0)),
+								(math.max(player:getStorageValue(Storage.Quest.U11_40.ThreatenedDreams.Mission02.EnfeebledCount), 0))
 								)
 							end,
 						[2] = "You killed 200 of the nightmare monsters that are invading Feyrist. Maelyrra was very happy but it seems \z
@@ -5939,7 +5939,7 @@ if not Quests then
 				},
 				[3] = {
 					name = "An Unlikely Couple",
-					storageId = Storage.Quest.ThreatenedDreams.Mission03[1],
+					storageId = Storage.Quest.U11_40.ThreatenedDreams.Mission03[1],
 					missionId = 10431,
 					startValue = 1,
 					endValue = 4,
@@ -5955,7 +5955,7 @@ if not Quests then
 					}
 				}
 			}
-		}
+		},
 	}
 end
 

@@ -50,11 +50,11 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
+local HiddenThreats = Storage.Quest.U11_50.HiddenThreats
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
-	local playerId = player:getId()
 
-	if player:getStorageValue(Storage.Quest.HiddenThreats.corymRescued08) < 0 then
+	if player:getStorageValue(HiddenThreats.corymRescued08) < 0 then
 		npcHandler:setMessage(MESSAGE_GREET, {
 			'Every man is the architect of his own fortune. We have nearly died of {hunger}.'
 		})
@@ -66,7 +66,6 @@ end
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
-	local playerId = player:getId()
 
 	if not npcHandler:checkInteraction(npc, creature) then
 		return false
@@ -76,9 +75,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say({
 				"What we get to eat is really ridiculous. Particularly in view of the fact that we should dig up an insane amount of ores."
 			}, npc, creature)
-			if player:getStorageValue(Storage.Quest.HiddenThreats.corymRescued08) < 0 then
-				player:setStorageValue(Storage.Quest.HiddenThreats.corymRescueMission, player:getStorageValue(Storage.Quest.HiddenThreats.corymRescueMission) +1 )
-				player:setStorageValue(Storage.Quest.HiddenThreats.corymRescued08, 1 )
+			if player:getStorageValue(HiddenThreats.corymRescued08) < 0 then
+				player:setStorageValue(HiddenThreats.corymRescueMission, player:getStorageValue(HiddenThreats.corymRescueMission) +1 )
+				player:setStorageValue(HiddenThreats.corymRescued08, 1 )
 			end
 	end
 	return true

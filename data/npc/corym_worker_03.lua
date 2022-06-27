@@ -50,16 +50,16 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
+local HiddenThreats = Storage.Quest.U11_50.HiddenThreats
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
-	local playerId = player:getId()
 
-	if player:getStorageValue(Storage.Quest.HiddenThreats.corymRescued04) < 0 then
+	if player:getStorageValue(HiddenThreats.corymRescued04) < 0 then
 		npcHandler:setMessage(MESSAGE_GREET, {
 			'My hero! A friend of mine sent you to liberate me? A true friend! I am poor but nevertheless I give you this as little reward.'
 		})
-		player:setStorageValue(Storage.Quest.HiddenThreats.corymRescueMission, player:getStorageValue(Storage.Quest.HiddenThreats.corymRescueMission) +1 )
-		player:setStorageValue(Storage.Quest.HiddenThreats.corymRescued04, 1 )
+		player:setStorageValue(HiddenThreats.corymRescueMission, player:getStorageValue(HiddenThreats.corymRescueMission) +1 )
+		player:setStorageValue(HiddenThreats.corymRescued04, 1 )
 		player:addItem(3032, 1)
 	else
 		npcHandler:setMessage(MESSAGE_GREET, 'My hero! A friend of mine sent you to liberate me? A true friend!')
@@ -68,8 +68,7 @@ local function greetCallback(npc, creature, message)
 end
 
 local function creatureSayCallback(npc, creature, type, message)
-	local player = Player(creature)
-	local playerId = player:getId()
+	--local player = Player(creature)
 
 	if not npcHandler:checkInteraction(npc, creature) then
 		return false

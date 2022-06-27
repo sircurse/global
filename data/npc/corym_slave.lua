@@ -50,11 +50,11 @@ npcType.onCloseChannel = function(npc, creature)
 	npcHandler:onCloseChannel(npc, creature)
 end
 
+local HiddenThreats = Storage.Quest.U11_50.HiddenThreats
 local function greetCallback(npc, creature, message)
 	local player = Player(creature)
-	local playerId = player:getId()
 
-	if player:getStorageValue(Storage.Quest.HiddenThreats.corymRescued02) < 0 then
+	if player:getStorageValue(HiddenThreats.corymRescued02) < 0 then
 		npcHandler:setMessage(MESSAGE_GREET, {
 			'Every man is the architect of his own fortune. There will be the day of {pay back}.'
 		})
@@ -66,7 +66,6 @@ end
 
 local function creatureSayCallback(npc, creature, type, message)
 	local player = Player(creature)
-	local playerId = player:getId()
 
 	if not npcHandler:checkInteraction(npc, creature) then
 		return false
@@ -76,9 +75,9 @@ local function creatureSayCallback(npc, creature, type, message)
 			npcHandler:say({
 				"The repression has taken too long. With our new weapons the respective people will get their just punishment."
 			}, npc, creature)
-			if player:getStorageValue(Storage.Quest.HiddenThreats.corymRescued02) < 0 then
-				player:setStorageValue(Storage.Quest.HiddenThreats.corymRescueMission, player:getStorageValue(Storage.Quest.HiddenThreats.corymRescueMission) +1 )
-				player:setStorageValue(Storage.Quest.HiddenThreats.corymRescued02, 1 )
+			if player:getStorageValue(HiddenThreats.corymRescued02) < 0 then
+				player:setStorageValue(HiddenThreats.corymRescueMission, player:getStorageValue(HiddenThreats.corymRescueMission) +1 )
+				player:setStorageValue(HiddenThreats.corymRescued02, 1 )
 			end
 	end
 	return true
@@ -86,10 +85,10 @@ end
 
 -- Greeting message
 npcHandler:setMessage(MESSAGE_FAREWELL, 'Good bye, |PLAYERNAME|.')
-	
+
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-	
+
 npcHandler:addModule(FocusModule:new())
 
 -- npcType registering the npcConfig table

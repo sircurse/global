@@ -197,7 +197,7 @@ ItemAction = {
 		itemPos = {
 			{x = 33440, y = 32217, z = 8}
 		}
-	}
+	},
 }
 
 ItemUnique = {
